@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CHON - 인간 관계를 핵심으로 하는 차세대 탈중앙화 신원 인증 플랫폼(DID). 메타버스 시대를 위한 새로운 신원 인프라를 구축합니다.">
+    <meta name="keywords" content="CHON, DID, 블록체인, 탈중앙화 신원인증, 스마트 족보, Web of Trust, 영지식 증명">
+    <meta name="author" content="CHON">
+    <meta property="og:title" content="CHON - Relationship is Identity">
+    <meta property="og:description" content="가계도에서 커뮤니티까지 연결하는 살아있는 신뢰 네트워크">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chon.com">
+    <meta property="og:image" content="images/chon-logo.png">
+    <title>CHON - Relationship is Identity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" style="text-decoration: none;">
+                    <img src="images/chon-logo.png" alt="CHON Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="about.html">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html#company">회사 소개</a></li>
+                        <li><a href="about.html#vision">비전</a></li>
+                        <li><a href="ceo.html">CEO 메시지</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="technology.html">Technology</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="technology.html#overview">CHON DID</a></li>
+                        <li><a href="technology.html#technology">신원 인증 기술</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="service.html">Service</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="service.html#service">Smart Genealogy</a></li>
+                        <li><a href="service.html#download">앱 다운로드</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                </button>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-slides">
+                <!-- Slide 1: Relationship is Identity -->
+                <div class="hero-slide active">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                Relationship is Identity<br>
+                                <span class="highlight">관계가 곧 신원이다</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                가족, 친구, 동료와의 관계를 통해<br>
+                                진정한 신원을 증명하는 새로운 패러다임
+                            </p>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="family-tree-preview">
+                                <img src="images/family-tree-hero.png" alt="CHON 관계 기반 신원 증명 - 가족 관계도" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: CHON DID App Screenshots -->
+                <div class="hero-slide">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                CHON DID App<br>
+                                <span class="highlight">탈중앙화 신원 인증</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                자기 주권 신원 증명 기술로<br>
+                                개인정보를 완벽하게 보호하는 DID 플랫폼
+                            </p>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="app-screenshots-grid">
+                                <div class="app-screenshot">
+                                    <img src="images/chon-app-screen1.png" alt="CHON 앱 스플래시 화면" loading="lazy">
+                                </div>
+                                <div class="app-screenshot">
+                                    <img src="images/chon-app-screen2.png" alt="CHON 가족 관계도 화면" loading="lazy">
+                                </div>
+                                <div class="app-screenshot">
+                                    <img src="images/chon-app-screen3.png" alt="CHON 신원 인증 메뉴" loading="lazy">
+                                </div>
+                                <div class="app-screenshot">
+                                    <img src="images/chon-app-screen4.png" alt="CHON Self ID 화면" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            <!-- Hero Navigation Dots -->
+            <div class="hero-nav">
+                <div class="hero-nav-dot active" data-slide="0"></div>
+                <div class="hero-nav-dot" data-slide="1"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main News Section -->
+    <section class="main-news-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">LATEST NEWS</span>
+                <h2 class="section-title" data-ko="주요 뉴스" data-en="Latest News">주요 뉴스</h2>
+                <p class="section-description" data-ko="CHON의 최신 소식을 확인하세요" data-en="Stay updated with CHON's latest developments">CHON의 최신 소식을 확인하세요</p>
+            </div>
+            
+            <!-- Featured News -->
+            <div class="main-featured-news">
+                <div class="news-card featured text-only">
+                    <div class="news-content-only">
+                        <div class="news-badge" data-ko="주요 뉴스" data-en="Featured News">주요 뉴스</div>
+                        <div class="news-meta">
+                            <span class="news-source">한국경제</span>
+                            <span class="news-date">2024.01.16</span>
+                        </div>
+                        <h3 class="news-title">
+                            <a href="https://n.news.naver.com/article/092/0002406447?sid=105" target="_blank">"가족으로 시작하는 블록체인"...촌, 교육 시장 공략 DID 대중화 나서</a>
+                        </h3>
+                        <p class="news-excerpt">
+                            블록체인 스타트업 촌(CHON)이 탈중앙화 신원인증(DID) 기술 대중화를 위해 파격적인 전략을 발표했다. 복잡한 기술 용어 대신 '가족'이라는 감성 코드로, B2B 영업 대신 '교육'으로 시장을 공략한다는 것이다.
+                        </p>
+                        <div class="news-tags">
+                            <span class="tag">교육시장</span>
+                            <span class="tag">DID대중화</span>
+                            <span class="tag">가족네트워크</span>
+                        </div>
+                        <div class="news-action">
+                            <a href="news.html" class="btn btn-outline" data-ko='<i class="fas fa-newspaper"></i> 더 많은 뉴스 보기' data-en='<i class="fas fa-newspaper"></i> View More News'>
+                                <i class="fas fa-newspaper"></i>
+                                더 많은 뉴스 보기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Vision Section -->
+    <section id="vision" class="vision-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">COMPANY VISION</span>
+                <h2 class="section-title" data-ko="우리의 비전" data-en="Our Vision">우리의 비전</h2>
+            </div>
+            <div class="vision-content">
+                <div class="vision-main">
+                    <div class="vision-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3 data-ko="CHON은 인간 관계를 핵심으로 하는" data-en="CHON is a next-generation platform centered on human relationships">CHON은 인간 관계를 핵심으로 하는</h3>
+                    <p class="vision-description" data-ko="차세대 탈중앙화 신원 인증 플랫폼(DID, Decentralized Identity)으로, 메타버스 시대를 위한 새로운 신원 인프라를 구축합니다" data-en="A Decentralized Identity (DID) platform that builds new identity infrastructure for the metaverse era">
+                        차세대 탈중앙화 신원 인증 플랫폼(DID, Decentralized Identity)으로, 메타버스 시대를 위한 새로운 신원 인프라를 구축합니다
+                    </p>
+                </div>
+                <div class="vision-features">
+                    <div class="feature-button">
+                        <i class="fas fa-lock"></i>
+                        <span data-ko="불변성" data-en="Immutability">불변성</span>
+                    </div>
+                    <div class="feature-button">
+                        <i class="fas fa-user-shield"></i>
+                        <span data-ko="자기주권" data-en="Self-Sovereign">자기주권</span>
+                    </div>
+                    <div class="feature-button">
+                        <i class="fas fa-project-diagram"></i>
+                        <span data-ko="탈중앙화" data-en="Decentralization">탈중앙화</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">MAIN SERVICES</span>
+                <h2 class="section-title" data-ko="핵심 서비스" data-en="Core Services">핵심 서비스</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card-new">
+                    <div class="service-card-header">
+                        <div class="service-icon-large blue">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-badge" data-ko="Core Technology" data-en="Core Technology">Core Technology</div>
+                        <h3>CHON DID</h3>
+                        <p class="service-subtitle" data-ko="Decentralized Identity" data-en="Decentralized Identity">Decentralized Identity</p>
+                        <p class="service-description" data-ko="자기 주권 신원 증명 기술을 통해 개인 정보의 주권을 사용자에게 돌려주는 탈중앙화 신원 인증 플랫폼입니다." data-en="A decentralized identity authentication platform that returns personal data sovereignty to users through self-sovereign identity technology.">
+                            자기 주권 신원 증명 기술을 통해 개인 정보의 주권을 사용자에게 돌려주는 탈중앙화 신원 인증 플랫폼입니다.
+                        </p>
+                        <div class="service-features-list">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span data-ko="탈중앙화 신원 인증" data-en="Decentralized Identity Authentication">탈중앙화 신원 인증</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span data-ko="자기 주권 신원 증명" data-en="Self-Sovereign Identity Proof">자기 주권 신원 증명</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span data-ko="안전한 개인정보 관리" data-en="Secure Personal Data Management">안전한 개인정보 관리</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card-new">
+                    <div class="service-card-header">
+                        <div class="service-icon-large green">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-badge" data-ko="Main Service" data-en="Main Service">Main Service</div>
+                        <h3>Smart Genealogy</h3>
+                        <p class="service-subtitle" data-ko="스마트 족보" data-en="Smart Genealogy">스마트 족보</p>
+                        <p class="service-description" data-ko="세대와 세대를 잇는 디지털 족보 서비스로, 가족의 역사와 데이터를 체계적으로 관리합니다." data-en="A digital genealogy service that connects generations, systematically managing family history and data.">
+                            세대와 세대를 잇는 디지털 족보 서비스로, 가족의 역사와 데이터를 체계적으로 관리합니다.
+                        </p>
+                        <div class="service-features-list">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span data-ko="디지털 족보 관리" data-en="Digital Genealogy Management">디지털 족보 관리</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span data-ko="가족 역사 기록" data-en="Family History Recording">가족 역사 기록</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span data-ko="데이터 체계적 관리" data-en="Systematic Data Management">데이터 체계적 관리</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">PARTNERS</span>
+                <h2 class="section-title" data-ko="파트너사" data-en="Partners">파트너사</h2>
+                <p class="section-description" data-ko="CHON과 함께하는 신뢰할 수 있는 파트너들입니다" data-en="Trusted partners working together with CHON">CHON과 함께하는 신뢰할 수 있는 파트너들입니다</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/200x80/f8fafc/1a1a2e?text=TokenPost" alt="TokenPost" />
+                    </div>
+                    <h4>TokenPost</h4>
+                    <p data-ko="블록체인 미디어 파트너" data-en="Blockchain Media Partner">블록체인 미디어 파트너</p>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/200x80/f8fafc/4285f4?text=Google" alt="Google" />
+                    </div>
+                    <h4>Google</h4>
+                    <p data-ko="클라우드 인프라 파트너" data-en="Cloud Infrastructure Partner">클라우드 인프라 파트너</p>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/200x80/f8fafc/ff9900?text=AWS" alt="AWS" />
+                    </div>
+                    <h4>Amazon Web Services</h4>
+                    <p data-ko="클라우드 서비스 파트너" data-en="Cloud Service Partner">클라우드 서비스 파트너</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-ko="지금 시작하세요" data-en="Get Started Now">지금 시작하세요</h2>
+                <p data-ko="메타버스 시대를 위한 새로운 신원 인프라를 경험하세요" data-en="Experience the new identity infrastructure for the metaverse era">메타버스 시대를 위한 새로운 신원 인프라를 경험하세요</p>
+                <a href="ir.html#contact" class="btn btn-primary btn-large" data-ko="문의하기" data-en="Contact Us">문의하기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-brand-row">
+                        <img src="images/chon-logo-new.png" alt="CHON Logo" class="footer-logo">
+                        <div class="footer-company-info">
+                            <p><strong>정보보안담당자:</strong> 김남율</p>
+                            <p><strong>이메일:</strong> ops@chon.ai</p>
+                            <p><strong>주소:</strong> 서울특별시 강남구 강남대로464 3층 309호</p>
+                            <p><strong>사업자등록번호:</strong> 110111-9136890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>서비스</h4>
+                        <ul>
+                            <li><a href="technology.html">CHON DID</a></li>
+                            <li><a href="service.html">Smart Genealogy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>회사</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="ir.html">투자 정보</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="contact.html">문의하기</a></li>
+                            <li><a href="contact.html#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">개인정보 처리방침</a>
+                    <span class="separator">|</span>
+                    <a href="#" onclick="alert('이용약관 페이지 준비 중입니다.')">이용약관</a>
+                </div>
+                <p class="copyright">&copy; 2026 CHON. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
