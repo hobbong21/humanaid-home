@@ -31,6 +31,10 @@ const navMenu = document.querySelector('.nav-menu');
 
 mobileMenuToggle?.addEventListener('click', () => {
     navMenu.classList.toggle('active');
+    // toggle aria-expanded for accessibility and active state for animation
+    const isOpen = navMenu.classList.contains('active');
+    mobileMenuToggle.classList.toggle('active', isOpen);
+    mobileMenuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     const icon = mobileMenuToggle.querySelector('i');
     if (navMenu.classList.contains('active')) {
         icon.classList.remove('fa-bars');
@@ -69,6 +73,7 @@ document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
 document.addEventListener('click', function(e) {
     if (!e.target.closest('.navbar')) {
         navMenu?.classList.remove('active');
+        mobileMenuToggle?.classList.remove('active');
         const icon = mobileMenuToggle?.querySelector('i');
         if (icon) {
             icon.classList.remove('fa-times');
@@ -86,6 +91,7 @@ document.querySelectorAll('.dropdown-menu a').forEach(link => {
     link.addEventListener('click', function() {
         if (window.innerWidth <= 968) {
             navMenu?.classList.remove('active');
+            mobileMenuToggle?.classList.remove('active');
             const icon = mobileMenuToggle?.querySelector('i');
             if (icon) {
                 icon.classList.remove('fa-times');
