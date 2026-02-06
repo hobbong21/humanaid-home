@@ -14,63 +14,90 @@
     <title>CHON - Relationship is Identity</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS 변수 및 기본 스타일 -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- 메인 스타일시트 (이전 style.css와 호환성) -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Schema.org 마크업 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CHON",
+        "url": "https://chon.com",
+        "image": "images/chon-logo.png",
+        "description": "CHON - 인간 관계를 핵심으로 하는 차세대 탈중앙화 신원 인증 플랫폼(DID)",
+        "sameAs": [
+            "https://twitter.com/choninc",
+            "https://www.linkedin.com/company/chon-inc"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "url": "https://chon.com/contact"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="메인 네비게이션">
         <div class="container">
             <div class="nav-brand">
-                <a href="index.html" style="text-decoration: none;">
-                    <img src="images/chon-logo.png" alt="CHON Logo">
+                <a href="index.html" style="text-decoration: none;" title="CHON 홈페이지">
+                    <img src="images/chon-logo.png" alt="CHON - Relationship is Identity 로고">
                 </a>
             </div>
-            <ul class="nav-menu">
-                <li class="dropdown">
-                    <a href="about.html">About</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="about.html#company">회사 소개</a></li>
-                        <li><a href="about.html#vision">비전</a></li>
-                        <li><a href="ceo.html">CEO 메시지</a></li>
+            <ul class="nav-menu" role="menubar" aria-label="메인 메뉴">
+                <li class="dropdown" role="presentation">
+                    <a href="about.html" role="menuitem" aria-haspopup="true" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="about.html#company" role="menuitem">회사 소개</a></li>
+                        <li><a href="about.html#vision" role="menuitem">비전</a></li>
+                        <li><a href="ceo.html" role="menuitem">CEO 메시지</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="technology.html">Technology</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="technology.html#overview">CHON DID</a></li>
-                        <li><a href="technology.html#technology">신원 인증 기술</a></li>
+                <li class="dropdown" role="presentation">
+                    <a href="technology.html" role="menuitem" aria-haspopup="true" aria-expanded="false">Technology</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="technology.html#overview" role="menuitem">CHON DID</a></li>
+                        <li><a href="technology.html#technology" role="menuitem">신원 인증 기술</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="service.html">Service</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="service.html#service">Smart Genealogy</a></li>
-                        <li><a href="service.html#download">앱 다운로드</a></li>
+                <li class="dropdown" role="presentation">
+                    <a href="service.html" role="menuitem" aria-haspopup="true" aria-expanded="false">Service</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="service.html#service" role="menuitem">Smart Genealogy</a></li>
+                        <li><a href="service.html#download" role="menuitem">앱 다운로드</a></li>
                     </ul>
                 </li>
-                <li><a href="news.html">News</a></li>
+                <li><a href="news.html" role="menuitem">News</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="lang-toggle" id="langToggle">
-                    <i class="fas fa-globe"></i>
+                <button class="lang-toggle" id="langToggle" aria-label="언어 전환 버튼" title="한국어/English 전환">
+                    <i class="fas fa-globe" aria-hidden="true"></i>
                     <span>EN</span>
                 </button>
-                <button class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
+                <button class="mobile-menu-toggle" aria-label="모바일 메뉴 열기" aria-expanded="false" aria-controls="navMenu" title="메뉴 열기">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
+    <section class="hero" role="region" aria-label="히어로 슬라이더">
+        <div class="hero-background" aria-hidden="true">
             <div class="hero-gradient-overlay"></div>
         </div>
         <div class="container">
-            <div class="hero-slides">
+            <div class="hero-slides" role="group" aria-label="히어로 슬라이드 그룹" aria-live="polite">
                 <!-- Slide 1: Relationship is Identity -->
-                <div class="hero-slide active">
+                <div class="hero-slide active" role="tabpanel" aria-labelledby="slide-1">
                     <div class="hero-content">
                         <div class="hero-text">
                             <h1 class="hero-title">
@@ -83,15 +110,15 @@
                             </p>
                         </div>
                         <div class="hero-visual">
-                            <div class="family-tree-preview">
-                                <img src="images/family-tree-hero.png" alt="CHON 관계 기반 신원 증명 - 가족 관계도" loading="lazy">
+                            <div class="hero-video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HlJoPduCHx4" title="CHON - Relationship is Identity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide 2: CHON DID App Screenshots -->
-                <div class="hero-slide">
+                <div class="hero-slide" role="tabpanel" aria-labelledby="slide-2">
                     <div class="hero-content">
                         <div class="hero-text">
                             <h1 class="hero-title">
@@ -105,12 +132,6 @@
                         </div>
                         <div class="hero-visual">
                             <div class="app-screenshots-grid">
-                                <div class="app-screenshot">
-                                    <img src="images/chon-app-screen1.png" alt="CHON 앱 스플래시 화면" loading="lazy">
-                                </div>
-                                <div class="app-screenshot">
-                                    <img src="images/chon-app-screen2.png" alt="CHON 가족 관계도 화면" loading="lazy">
-                                </div>
                                 <div class="app-screenshot">
                                     <img src="images/chon-app-screen3.png" alt="CHON 신원 인증 메뉴" loading="lazy">
                                 </div>
@@ -188,24 +209,18 @@
                     <div class="vision-icon">
                         <i class="fas fa-infinity"></i>
                     </div>
-                    <h3 data-ko="CHON은 인간 관계를 핵심으로 하는" data-en="CHON is a next-generation platform centered on human relationships">CHON은 인간 관계를 핵심으로 하는</h3>
-                    <p class="vision-description" data-ko="차세대 탈중앙화 신원 인증 플랫폼(DID, Decentralized Identity)으로, 메타버스 시대를 위한 새로운 신원 인프라를 구축합니다" data-en="A Decentralized Identity (DID) platform that builds new identity infrastructure for the metaverse era">
-                        차세대 탈중앙화 신원 인증 플랫폼(DID, Decentralized Identity)으로, 메타버스 시대를 위한 새로운 신원 인프라를 구축합니다
-                    </p>
+                    <h3 data-ko="차세대 탈중앙화 신원 인증 플랫폼" data-en="Decentralized Identity Platform">차세대 탈중앙화 신원 인증 플랫폼</h3>
+                    <p class="vision-subtitle" data-ko="DID (Decentralized Identity)" data-en="DID (Decentralized Identity)">DID (Decentralized Identity)</p>
+                    <div class="vision-poetry">
+                        <p class="poetry-line" data-ko="진짜 나는 관계 속에 있습니다" data-en="I am truly in relationships">진짜 나는 관계 속에 있습니다</p>
+                        <p class="poetry-line" data-ko="신뢰는 관계에서 시작됩니다" data-en="Trust starts from relationships">신뢰는 관계에서 시작됩니다</p>
+                        <p class="poetry-line" data-ko="나를 증명하는 건 내 주변 사람들" data-en="Proving myself through those around me">나를 증명하는 건 내 주변 사람들</p>
+                        <p class="poetry-line" data-ko="관계를 잇고, 신원을 증명합니다" data-en="Connecting relationships, proving identity">관계를 잇고, 신원을 증명합니다</p>
+                        <p class="poetry-line" data-ko="가족에서 팬덤까지, 사람을 잇는 신뢰 네트워크" data-en="From family to fandom, a trust network connecting people">가족에서 팬덤까지, 사람을 잇는 신뢰 네트워크</p>
+                        <p class="poetry-line highlight" data-ko="체인 - 촌" data-en="Chain - CHON">체인 - 촌</p>
+                    </div>
                 </div>
                 <div class="vision-features">
-                    <div class="feature-button">
-                        <i class="fas fa-lock"></i>
-                        <span data-ko="불변성" data-en="Immutability">불변성</span>
-                    </div>
-                    <div class="feature-button">
-                        <i class="fas fa-user-shield"></i>
-                        <span data-ko="자기주권" data-en="Self-Sovereign">자기주권</span>
-                    </div>
-                    <div class="feature-button">
-                        <i class="fas fa-project-diagram"></i>
-                        <span data-ko="탈중앙화" data-en="Decentralization">탈중앙화</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -297,7 +312,7 @@
             <div class="partners-grid">
                 <div class="partner-card">
                     <div class="partner-logo">
-                        <img src="https://via.placeholder.com/200x80/f8fafc/1a1a2e?text=TokenPost" alt="TokenPost" />
+                        <img src="images/tokenpost-logo.png" alt="TokenPost 블록체인 미디어" />
                     </div>
                     <h4>TokenPost</h4>
                     <p data-ko="블록체인 미디어 파트너" data-en="Blockchain Media Partner">블록체인 미디어 파트너</p>
@@ -305,18 +320,18 @@
                 
                 <div class="partner-card">
                     <div class="partner-logo">
-                        <img src="https://via.placeholder.com/200x80/f8fafc/4285f4?text=Google" alt="Google" />
+                        <img src="images/zdnet-logo.png" alt="ZDNET 기술 미디어" />
                     </div>
-                    <h4>Google</h4>
-                    <p data-ko="클라우드 인프라 파트너" data-en="Cloud Infrastructure Partner">클라우드 인프라 파트너</p>
+                    <h4>ZDNET</h4>
+                    <p data-ko="기술 미디어 파트너" data-en="Tech Media Partner">기술 미디어 파트너</p>
                 </div>
                 
                 <div class="partner-card">
                     <div class="partner-logo">
-                        <img src="https://via.placeholder.com/200x80/f8fafc/ff9900?text=AWS" alt="AWS" />
+                        <img src="images/kma-logo.png" alt="한국경영자협회" />
                     </div>
-                    <h4>Amazon Web Services</h4>
-                    <p data-ko="클라우드 서비스 파트너" data-en="Cloud Service Partner">클라우드 서비스 파트너</p>
+                    <h4>한국경영자협회</h4>
+                    <p data-ko="경제 단체 파트너" data-en="Business Association Partner">경제 단체 파트너</p>
                 </div>
             </div>
         </div>
@@ -389,6 +404,12 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- 모듈식 JavaScript 로드 -->
+    <script src="js/utils.js" type="module"></script>
+    <script src="js/navbar.js" type="module"></script>
+    <script src="js/hero.js" type="module"></script>
+    <script src="js/animations.js" type="module"></script>
+    <script src="js/interactions.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
 </body>
 </html>

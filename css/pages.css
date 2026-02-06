@@ -92,11 +92,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.1;
-    background-image: 
-        repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(255,255,255,0.03) 60px, rgba(255,255,255,0.03) 61px),
-        repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(255,255,255,0.03) 60px, rgba(255,255,255,0.03) 61px);
-    animation: blockchainMove 30s linear infinite;
+    opacity: 0.3;
+    background-image: url('../images/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .page-header-content {
@@ -932,14 +932,14 @@
 
 /* DID Page Styles */
 .did-overview-section {
-    padding: 100px 0;
+    padding: 70px 0;
     background: var(--white);
 }
 
 .overview-main {
     text-align: center;
     max-width: 900px;
-    margin: 0 auto 60px;
+    margin: 0 auto 50px;
 }
 
 .overview-badge {
@@ -974,12 +974,12 @@
 
 .overview-features-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .overview-feature-card {
-    padding: 35px 25px;
+    padding: 28px 20px;
     background: var(--light-bg);
     border-radius: 16px;
     text-align: center;
@@ -1039,20 +1039,20 @@
 
 /* Benefits Section */
 .did-benefits-section {
-    padding: 100px 0;
+    padding: 70px 0;
     background: var(--light-bg);
 }
 
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 50px;
+    gap: 25px;
+    margin-top: 40px;
 }
 
 .benefit-item {
     background: var(--white);
-    padding: 40px;
+    padding: 35px;
     border-radius: 16px;
     position: relative;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -1089,7 +1089,7 @@
 
 /* Technology Section */
 .did-technology-section {
-    padding: 100px 0;
+    padding: 70px 0;
     background: var(--dark-bg);
     color: #ffffff; /* 명확한 흰색 */
 }
@@ -1106,7 +1106,7 @@
 .tech-overview {
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 50px;
+    margin: 0 auto 40px;
 }
 
 .tech-overview h3 {
@@ -1121,17 +1121,16 @@
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.9); /* 더 밝은 색상 */
 }
-}
 
 .tech-stack-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 25px;
 }
 
 .tech-stack-card {
     background: rgba(255, 255, 255, 0.05);
-    padding: 40px;
+    padding: 35px;
     border-radius: 16px;
     transition: all 0.3s;
     border: 2px solid transparent;
@@ -1185,44 +1184,44 @@
 
 /* Process Section */
 .did-process-section {
-    padding: 100px 0;
+    padding: 70px 0;
     background: var(--white);
 }
 
 .process-timeline {
     max-width: 900px;
-    margin: 50px auto 0;
+    margin: 40px auto 0;
 }
 
 .process-step {
     display: grid;
-    grid-template-columns: 80px 1fr 100px;
-    gap: 30px;
+    grid-template-columns: 70px 1fr 90px;
+    gap: 25px;
     align-items: center;
-    padding: 30px 0;
+    padding: 25px 0;
     position: relative;
 }
 
 .process-step:not(:last-child)::after {
     content: '';
     position: absolute;
-    left: 40px;
-    top: 80px;
+    left: 35px;
+    top: 70px;
     width: 2px;
-    height: calc(100% - 50px);
+    height: calc(100% - 40px);
     background: var(--light-bg);
 }
 
 .step-circle {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background: var(--gradient-1);
     color: var(--white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 800;
     box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
     position: relative;
@@ -1254,15 +1253,15 @@
 
 /* Use Cases Section */
 .did-usecases-section {
-    padding: 100px 0;
+    padding: 70px 0;
     background: var(--light-bg);
 }
 
 .usecases-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 50px;
+    gap: 25px;
+    margin-top: 40px;
 }
 
 .usecase-card {

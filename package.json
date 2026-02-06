@@ -1,0 +1,18 @@
+{
+  "name": "chon-did-website",
+  "version": "1.0.0",
+  "description": "CHON DID Platform Website - Next generation decentralized identity platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Open index.html in your browser'"
+  },
+  "keywords": [
+    "chon",
+    "did",
+    "identity",
+    "decentralized",
+    "web3"
+  ],
+  "author": "CHON Team",
+  "license": "MIT"
+}
