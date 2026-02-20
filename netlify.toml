@@ -1,0 +1,39 @@
+[[redirects]]
+  from = "http://chon.com/*"
+  to = "https://chon.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.chon.com/*"
+  to = "https://www.chon.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://chon.ai/*"
+  to = "https://www.chon.ai/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.chon.ai/*"
+  to = "https://www.chon.ai/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://chon.ai/*"
+  to = "https://www.chon.ai/:splat"
+  status = 301
+  force = true
+
+# 추가 보안 헤더
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
