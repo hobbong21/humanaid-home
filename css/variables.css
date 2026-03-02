@@ -50,6 +50,12 @@
     --radius-xl: 24px;
     --radius-2xl: 32px;
     --radius-full: 9999px;
+
+    /* Backward-compatible aliases */
+    --border-radius-sm: var(--radius-sm);
+    --border-radius-md: var(--radius-md);
+    --border-radius-lg: var(--radius-lg);
+    --border-radius-xl: var(--radius-xl);
     
     /* Spacing */
     --space-xs: 0.5rem;

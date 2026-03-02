@@ -31,14 +31,14 @@ class HeroSlider {
                 slide.style.visibility = 'visible';
                 slide.style.transform = 'translateY(0)';
                 slide.style.position = 'relative';
-                slide.style.display = 'flex';
+                slide.style.pointerEvents = 'auto';
             } else {
                 slide.classList.remove('active');
                 slide.style.opacity = '0';
                 slide.style.visibility = 'hidden';
                 slide.style.transform = 'translateY(30px)';
                 slide.style.position = 'absolute';
-                slide.style.display = 'none';
+                slide.style.pointerEvents = 'none';
             }
         });
         
@@ -90,6 +90,7 @@ class HeroSlider {
         currentSlide.style.opacity = '0';
         currentSlide.style.visibility = 'hidden';
         currentSlide.style.transform = 'translateY(30px)';
+        currentSlide.style.pointerEvents = 'none';
         
         // 현재 도트 비활성화
         this.dots[this.currentSlide].classList.remove('active');
@@ -99,17 +100,18 @@ class HeroSlider {
         const newSlide = this.slides[this.currentSlide];
         
         setTimeout(() => {
-            // 이전 슬라이드 완전히 숨기기
+            // 모든 슬라이드 위치 설정
             this.slides.forEach((slide, i) => {
                 if (i !== this.currentSlide) {
-                    slide.style.display = 'none';
                     slide.style.position = 'absolute';
+                    slide.style.visibility = 'hidden';
+                    slide.style.pointerEvents = 'none';
                 }
             });
             
             // 새 슬라이드 표시
-            newSlide.style.display = 'flex';
             newSlide.style.position = 'relative';
+            newSlide.style.pointerEvents = 'auto';
             newSlide.classList.add('active');
             
             setTimeout(() => {

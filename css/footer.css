@@ -24,6 +24,12 @@
 }
 
 /* Footer Brand */
+.footer-logo {
+    height: 80px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
 .footer-brand h3 {
     font-size: 36px;
     font-weight: 900;

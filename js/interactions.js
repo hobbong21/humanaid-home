@@ -12,6 +12,7 @@ class Interactions {
         this.setupSmoothScroll();
         this.setupLanguageToggle();
         this.setupProgressBar();
+        this.setupComingSoonLinks();
         console.log('%c✓ Interactions Module Initialized', 'color: #ec4899; font-weight: bold;');
     }
 
@@ -138,6 +139,16 @@ class Interactions {
         }, { threshold: 0.5 });
         
         progressObserver.observe(progressBar.parentElement);
+    }
+
+    setupComingSoonLinks() {
+        document.querySelectorAll('[data-coming-soon]').forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const message = link.getAttribute('data-coming-soon') || '준비 중입니다.';
+                alert(message);
+            });
+        });
     }
 }
 
