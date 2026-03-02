@@ -1258,11 +1258,10 @@ section {
 }
 
 .services-grid {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     align-items: stretch;
-    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -4703,12 +4702,35 @@ body {
     z-index: 1;
 }
 
+/* Hide empty icon wrappers to fix spacing */
+.service-icon-large:empty,
+.feature-icon-wrapper:empty {
+    display: none;
+}
+
+.service-card-header:has(.service-icon-large:empty) {
+    padding: 0;
+    min-height: 0;
+}
+
+.overview-feature-card:has(.feature-icon-wrapper:empty) .feature-icon-wrapper {
+    display: none;
+}
+
 .service-icon-large.blue {
     background: rgba(79, 172, 254, 0.2);
 }
 
 .service-icon-large.green {
     background: rgba(0, 212, 170, 0.2);
+}
+
+.service-icon-large.purple {
+    background: rgba(147, 51, 234, 0.2);
+}
+
+.service-icon-large.orange {
+    background: rgba(251, 146, 60, 0.2);
 }
 
 .service-icon-large i {
