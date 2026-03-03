@@ -10,7 +10,7 @@
 // import Interactions from './interactions.js';
 
 // 콘솔 메시지
-console.log('%c🔗 CHON - Preserving human history on the blockchain', 'font-size: 16px; font-weight: bold; color: #2563eb;');
+console.log('%c🧠 HumanAID - AI + Human + Digital Solutions', 'font-size: 16px; font-weight: bold; color: #2563eb;');
 console.log('%cVersion 2.0 (Modularized)', 'font-size: 12px; color: #64748b;');
 console.log('%c📦 Loaded Modules:', 'font-size: 12px; color: #10b981; font-weight: bold;');
 console.log('  • Navbar (Navigation)');

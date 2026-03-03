@@ -37,13 +37,13 @@
 }
 
 .nav-brand img {
-    height: 120px;
+    height: 48px;
     width: auto;
     transition: var(--transition-base);
 }
 
 .navbar.scrolled .nav-brand img {
-    height: 100px;
+    height: 42px;
 }
 
 /* Menu */

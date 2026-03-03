@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <!-- 메인 스타일시트 (이전 style.css와 호환성) -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/home-sections.css">
     <!-- Schema.org 마크업 -->
     <script type="application/ld+json">
     {
@@ -49,11 +51,11 @@
     <nav class="navbar" role="navigation" aria-label="메인 네비게이션">
         <div class="container">
             <div class="nav-brand">
-                <a href="index.html" style="text-decoration: none;" title="Humanaid 홈페이지">
+                <a href="index.html" title="Humanaid 홈페이지">
                     <img src="images/humanaid-logo.png" alt="Humanaid - AI + Human + Digital Solutions 로고">
                 </a>
             </div>
-            <ul class="nav-menu" role="menubar" aria-label="메인 메뉴">
+            <ul id="navMenu" class="nav-menu" role="menubar" aria-label="메인 메뉴">
                 <li class="dropdown" role="presentation">
                     <a href="about.html" role="menuitem" aria-haspopup="true" aria-expanded="false">About</a>
                     <ul class="dropdown-menu" role="menu">
@@ -65,16 +67,15 @@
                 <li class="dropdown" role="presentation">
                     <a href="technology.html" role="menuitem" aria-haspopup="true" aria-expanded="false">Technology</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="technology.html#did" role="menuitem">DID 기술</a></li>
-                        <li><a href="technology.html#ai" role="menuitem">AI 솔루션</a></li>
+                        <li><a href="technology.html#overview" role="menuitem">핵심 플랫폼 기술</a></li>
+                        <li><a href="technology.html#technology" role="menuitem">DID 기술</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" role="presentation">
                     <a href="service.html" role="menuitem" aria-haspopup="true" aria-expanded="false">Service</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="service.html#human-did" role="menuitem">Human DID</a></li>
-                        <li><a href="service.html#makeit" role="menuitem">Make.IT_AI-Assistant</a></li>
-                        <li><a href="service.html#smartfarm" role="menuitem">스마트팜 (Coming Soon)</a></li>
+                        <li><a href="service.html#service" role="menuitem">AI 솔루션</a></li>
+                        <li><a href="service.html#smartfarm" role="menuitem">스마트팜</a></li>
                     </ul>
                 </li>
                 <li><a href="news.html" role="menuitem">News</a></li>
@@ -84,6 +85,7 @@
                     <span>EN</span>
                 </button>
                 <button class="mobile-menu-toggle" aria-label="모바일 메뉴 열기" aria-expanded="false" aria-controls="navMenu" title="메뉴 열기">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
@@ -97,10 +99,10 @@
         <div class="container">
             <div class="hero-slides" role="group" aria-label="히어로 슬라이드 그룹" aria-live="polite">
                 <!-- Slide 1: Human+AI+Digital -->
-                <div class="hero-slide active" role="tabpanel" aria-labelledby="slide-1">
+                <div class="hero-slide active" id="hero-slide-1" role="tabpanel" aria-labelledby="slide-1-title">
                     <div class="hero-content">
                         <div class="hero-text">
-                            <h1 class="hero-title">
+                            <h1 class="hero-title" id="slide-1-title">
                                 Human+AI+Digital<br>
                                 <span class="highlight" data-ko="사람을 위한 AI, 산업을 잇는 디지털" data-en="AI for People, Digital Connecting Industries">사람을 위한 AI, 산업을 잇는 디지털</span>
                             </h1>
@@ -126,10 +128,10 @@
                 </div>
 
                 <!-- Slide 2: Make.IT_AI-Assistant Platform -->
-                <div class="hero-slide" role="tabpanel" aria-labelledby="slide-2">
+                <div class="hero-slide" id="hero-slide-2" role="tabpanel" aria-labelledby="slide-2-title">
                     <div class="hero-content">
                         <div class="hero-text">
-                            <h1 class="hero-title">
+                            <h1 class="hero-title" id="slide-2-title">
                                 Make.IT_AI-Assistant<br>
                                 <span class="highlight" data-ko="End-to-End AI 프로세스를 시각화한 플랫폼 아키텍처" data-en="Platform Architecture Visualizing End-to-End AI Process">End-to-End AI 프로세스를 시각화한 플랫폼 아키텍처</span>
                             </h1>
@@ -149,9 +151,9 @@
             </div>
             
             <!-- Hero Navigation Dots -->
-            <div class="hero-nav">
-                <div class="hero-nav-dot active" data-slide="0"></div>
-                <div class="hero-nav-dot" data-slide="1"></div>
+            <div class="hero-nav" role="tablist" aria-label="히어로 슬라이드 선택">
+                <button class="hero-nav-dot active" type="button" role="tab" data-slide="0" aria-label="슬라이드 1 보기" aria-selected="true" aria-controls="hero-slide-1"></button>
+                <button class="hero-nav-dot" type="button" role="tab" data-slide="1" aria-label="슬라이드 2 보기" aria-selected="false" aria-controls="hero-slide-2"></button>
             </div>
         </div>
     </section>
@@ -202,8 +204,8 @@
     <section id="vision" class="vision-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">VISION & MISSION</span>
-                <h2 class="section-title" data-ko="비전 & 미션" data-en="Vision & Mission">비전 & 미션</h2>
+                <span class="section-subtitle">VISION</span>
+                <h2 class="section-title" data-ko="비전" data-en="Vision">비전</h2>
             </div>
             <div class="vision-content">
                 <div class="vision-main">

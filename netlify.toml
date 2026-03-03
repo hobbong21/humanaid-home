@@ -1,30 +1,18 @@
 [[redirects]]
-  from = "http://chon.com/*"
-  to = "https://chon.com/:splat"
+  from = "http://humanaid.digital/*"
+  to = "https://humanaid.digital/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://www.chon.com/*"
-  to = "https://www.chon.com/:splat"
+  from = "http://www.humanaid.digital/*"
+  to = "https://humanaid.digital/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://chon.ai/*"
-  to = "https://www.chon.ai/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://www.chon.ai/*"
-  to = "https://www.chon.ai/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://chon.ai/*"
-  to = "https://www.chon.ai/:splat"
+  from = "https://www.humanaid.digital/*"
+  to = "https://humanaid.digital/:splat"
   status = 301
   force = true
 

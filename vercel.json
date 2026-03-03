@@ -5,10 +5,10 @@
       "has": [
         {
           "type": "host",
-          "value": "chon.ai"
+          "value": "www.humanaid.digital"
         }
       ],
-      "destination": "https://www.chon.ai/:path*",
+      "destination": "https://humanaid.digital/:path*",
       "permanent": true
     },
     {
@@ -21,10 +21,10 @@
         },
         {
           "type": "host",
-          "value": "chon.com"
+          "value": "humanaid.digital"
         }
       ],
-      "destination": "https://chon.com/:path*",
+      "destination": "https://humanaid.digital/:path*",
       "permanent": true
     },
     {
@@ -37,26 +37,10 @@
         },
         {
           "type": "host",
-          "value": "www.chon.com"
+          "value": "www.humanaid.digital"
         }
       ],
-      "destination": "https://www.chon.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "header",
-          "key": "x-forwarded-proto",
-          "value": "http"
-        },
-        {
-          "type": "host",
-          "value": "www.chon.ai"
-        }
-      ],
-      "destination": "https://www.chon.ai/:path*",
+      "destination": "https://humanaid.digital/:path*",
       "permanent": true
     }
   ],

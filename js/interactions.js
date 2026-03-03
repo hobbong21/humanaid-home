@@ -43,8 +43,15 @@ class Interactions {
         if (!langToggle) return;
 
         const langSpan = langToggle.querySelector('span');
-        const savedLang = localStorage.getItem('chon-language') || 'ko';
+        const storageKey = 'humanaid-language';
+        const legacyKey = 'chon-language';
+        const legacyLang = localStorage.getItem(legacyKey);
+        const savedLang = localStorage.getItem(storageKey) || legacyLang || 'ko';
         const initialLang = savedLang === 'en' ? 'en' : 'ko';
+
+        if (legacyLang && !localStorage.getItem(storageKey)) {
+            localStorage.setItem(storageKey, initialLang);
+        }
 
         // 저장된 언어로 초기화
         this.changeLanguage(initialLang);
@@ -64,7 +71,7 @@ class Interactions {
             }
 
             // 로컬스토리지에 저장
-            localStorage.setItem('chon-language', nextLang);
+            localStorage.setItem(storageKey, nextLang);
         });
     }
 
