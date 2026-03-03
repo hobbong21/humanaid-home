@@ -483,20 +483,13 @@ html {
     flex-direction: row;
 }
 
-.hero-slide:first-child {
-    position: relative;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-
 .hero-slide.active {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
     position: relative;
     pointer-events: auto;
+    z-index: 1;
 }
 
 .hero-content {
@@ -595,7 +588,7 @@ html {
 
 .hero-video-container {
     width: 100%;
-    max-width: 560px;
+    max-width: 100%;
     position: relative;
     aspect-ratio: 16 / 9;
     height: auto;
@@ -605,7 +598,8 @@ html {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
 }
 
-.hero-video-container iframe {
+.hero-video-container iframe,
+.hero-video-container video {
     position: absolute;
     top: 0;
     left: 0;
@@ -615,6 +609,15 @@ html {
     border: none;
     display: block;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-video-container video {
+    object-fit: cover;
+}
+
+.hero-video-container .brand-video {
+    position: relative;
+    object-fit: contain;
 }
 
 .video-fallback {
@@ -641,7 +644,8 @@ html {
     object-fit: cover;
 }
 
-.hero-video-container iframe:hover {
+.hero-video-container iframe:hover,
+.hero-video-container video:hover {
     transform: scale(1.02);
     box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
 }
@@ -998,25 +1002,7 @@ section {
     margin: 0 auto;
 }
 
-.vision-icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 30px;
-    background: var(--gradient-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--shadow-lg);
-    position: relative;
-}
-
-.vision-icon i {
-    font-size: 48px;
-    color: var(--white);
-    position: relative;
-    z-index: 1;
-}
+/* vision-icon removed - not used in HTML */
 
 .vision-main h3 {
     font-size: 28px;
@@ -1264,6 +1250,14 @@ section {
     align-items: stretch;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* 2x2 그리드 레이아웃 강제 */
+.services-grid.services-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
 }
 
 .service-card {
@@ -4388,6 +4382,27 @@ body {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
+/* Platform Screenshot Styles */
+.platform-screenshot {
+    width: 100%;
+    max-width: 100%;
+    animation: heroFloat 8s ease-in-out infinite;
+}
+
+.platform-screenshot img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.platform-screenshot:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
 /* Responsive adjustments for app screenshots */
 @media (max-width: 768px) {
     .app-screenshots-grid {
@@ -4402,6 +4417,10 @@ body {
     }
     
     .app-screenshot img {
+        border-radius: 12px;
+    }
+    
+    .platform-screenshot img {
         border-radius: 12px;
     }
 }
@@ -4777,6 +4796,57 @@ body {
     font-size: 15px;
     line-height: 1.7;
     margin-bottom: 30px;
+}
+
+/* Coming Soon Card Styles */
+.service-card-coming-soon {
+    opacity: 0.85;
+    position: relative;
+}
+
+.service-card-coming-soon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.3) 100%);
+    pointer-events: none;
+    border-radius: var(--border-radius-xl);
+}
+
+.service-badge-coming-soon {
+    background: linear-gradient(135deg, #fb923c 0%, #f59e0b 100%) !important;
+    color: white !important;
+}
+
+/* Placeholder Card Styles */
+.service-card-placeholder {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border: 2px dashed var(--border-medium);
+}
+
+.service-card-placeholder:hover {
+    transform: none;
+    box-shadow: var(--shadow-lg);
+}
+
+.service-placeholder-content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.service-placeholder-content h3 {
+    font-size: 24px;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.service-placeholder-content p {
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .service-features-list {

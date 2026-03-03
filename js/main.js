@@ -985,6 +985,9 @@ function updatePageContent(lang) {
     }
 }
 
+// Language toggle is now handled by interactions.js module
+// Keeping this code commented for reference
+/*
 if (langToggle) {
     langToggle.addEventListener('click', function() {
         const currentLangSpan = this.querySelector('span');
@@ -1021,6 +1024,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+*/
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {

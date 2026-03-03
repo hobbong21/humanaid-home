@@ -70,10 +70,14 @@ class Interactions {
 
     // 언어 변경 처리
     changeLanguage(lang) {
+        console.log(`%c언어 변경: ${lang}`, 'color: #10b981; font-weight: bold;');
+        
         this.updateMenuLanguage(lang);
 
         // data-ko, data-en 속성을 가진 요소들에 대해 텍스트 변경
         const elements = document.querySelectorAll('[data-ko][data-en]');
+        
+        console.log(`%c번역 대상 요소 수: ${elements.length}`, 'color: #3b82f6;');
         
         elements.forEach(element => {
             if (lang === 'en') {
@@ -85,6 +89,8 @@ class Interactions {
 
         // HTML lang 속성 변경
         document.documentElement.lang = lang === 'en' ? 'en' : 'ko';
+        
+        console.log(`%c✓ 언어 변경 완료: ${lang}`, 'color: #10b981; font-weight: bold;');
     }
 
     updateMenuLanguage(lang) {
@@ -93,34 +99,32 @@ class Interactions {
                 'about.html#company': '회사 소개',
                 'about.html#vision': '비전',
                 'ceo.html': 'CEO 메시지',
-                'about.html#team': '팀 소개',
-                'technology.html#overview': 'CHON DID',
-                'technology.html#technology': '신원 인증 기술',
-                'service.html#service': 'Smart Genealogy',
-                'service.html#preservation': '역사 보존',
-                'service.html#blockchain': '블록체인 기록',
-                'service.html#download': '앱 다운로드'
+                'technology.html#did': 'DID 기술',
+                'technology.html#ai': 'AI 솔루션',
+                'service.html#human-did': 'Human DID',
+                'service.html#makeit': 'Make.IT_AI-Assistant',
+                'service.html#smartfarm': '스마트팜 (Coming Soon)'
             },
             en: {
                 'about.html#company': 'Company Info',
                 'about.html#vision': 'Vision',
                 'ceo.html': 'CEO Message',
-                'about.html#team': 'Team Info',
-                'technology.html#overview': 'CHON DID',
-                'technology.html#technology': 'Identity Technology',
-                'service.html#service': 'Smart Genealogy',
-                'service.html#preservation': 'History Preservation',
-                'service.html#blockchain': 'Blockchain Record',
-                'service.html#download': 'App Download'
+                'technology.html#did': 'DID Technology',
+                'technology.html#ai': 'AI Solution',
+                'service.html#human-did': 'Human DID',
+                'service.html#makeit': 'Make.IT_AI-Assistant',
+                'service.html#smartfarm': 'Smart Farm (Coming Soon)'
             }
         };
 
+        // 드롭다운 메뉴 아이템만 선택 (메인 메뉴 제외)
         const menuItems = document.querySelectorAll('.dropdown-menu a');
         menuItems.forEach(item => {
             const href = item.getAttribute('href');
-            const nextText = menuTranslations[lang]?.[href];
-            if (nextText) {
-                item.textContent = nextText;
+            const translation = menuTranslations[lang]?.[href];
+            if (translation) {
+                // textContent 대신 innerText 사용하여 더 안정적으로 업데이트
+                item.innerText = translation;
             }
         });
     }

@@ -21,7 +21,7 @@ class HeroSlider {
             return;
         }
         
-        console.log(`%c✓ Hero Slider Initialized: ${this.slides.length}개 슬라이드`, 'color: #06b6d4; font-weight: bold;');
+        console.log(`%c✓ Hero Slider Initialized: ${this.slides.length}개 슬라이드, ${this.dots.length}개 도트`, 'color: #06b6d4; font-weight: bold;');
         
         // 초기 상태 설정 - 첫 번째 슬라이드만 활성화
         this.slides.forEach((slide, index) => {
@@ -53,6 +53,7 @@ class HeroSlider {
         this.dots.forEach((dot, index) => {
             dot.addEventListener('click', (e) => {
                 e.preventDefault();
+                console.log(`%c도트 ${index} 클릭됨`, 'color: #10b981;');
                 this.goToSlide(index);
                 this.resetAutoPlay();
             });
@@ -60,6 +61,7 @@ class HeroSlider {
         
         // 자동 재생 시작
         this.startAutoPlay();
+        console.log(`%c자동 재생 시작 (${this.autoPlayDelay / 1000}초 간격)`, 'color: #f59e0b;');
         
         // 마우스 호버 시 일시정지
         const heroSection = document.querySelector('.hero');
@@ -75,13 +77,16 @@ class HeroSlider {
     
     goToSlide(index) {
         if (index === this.currentSlide || this.isTransitioning) {
+            console.log(`%c슬라이드 전환 스킵 (현재: ${this.currentSlide}, 요청: ${index}, 전환중: ${this.isTransitioning})`, 'color: #ef4444;');
             return;
         }
         
         if (index < 0 || index >= this.slides.length) {
+            console.log(`%c잘못된 슬라이드 인덱스: ${index}`, 'color: #ef4444;');
             return;
         }
         
+        console.log(`%c슬라이드 전환: ${this.currentSlide} → ${index}`, 'color: #8b5cf6; font-weight: bold;');
         this.isTransitioning = true;
         
         // 현재 슬라이드 숨기기
