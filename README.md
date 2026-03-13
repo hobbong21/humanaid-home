@@ -200,6 +200,25 @@ http://localhost:8000
 - `vercel.json` 설정 파일 포함
 - Git 연동 자동 배포
 
+## AI 상담봇 연동
+
+AI 상담봇은 서버리스 API를 통해 OpenAI를 호출합니다.
+
+- Vercel: `api/ai-chat.js`
+- Netlify: `netlify/functions/ai-chat.js` + `netlify.toml` 리라이트(`/api/ai-chat`)
+
+필수 환경변수:
+
+```bash
+OPENAI_API_KEY=your_openai_api_key
+OPENAI_MODEL=gpt-4o-mini
+AI_RATE_LIMIT_MAX=10
+AI_RATE_LIMIT_WINDOW_MS=60000
+```
+
+`OPENAI_MODEL`은 선택이며, 미설정 시 기본값 `gpt-4o-mini`를 사용합니다.
+`AI_RATE_LIMIT_MAX`, `AI_RATE_LIMIT_WINDOW_MS`도 선택값이며 기본값은 각각 `10`, `60000`(1분)입니다.
+
 ### GitHub Pages
 ```bash
 # gh-pages 브랜치로 배포
