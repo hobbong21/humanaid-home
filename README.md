@@ -52,8 +52,7 @@ humanaid-home/
 │   ├── hero.js             # 히어로 슬라이더
 │   ├── animations.js       # 스크롤 애니메이션
 │   ├── interactions.js     # 사용자 상호작용
-│   ├── https-redirect.js   # HTTPS 리다이렉트
-│   └── index.js            # 메인 스크립트
+│   └── https-redirect.js   # HTTPS 리다이렉트
 └── images/                 # 이미지 및 미디어 파일
 ```
 
@@ -159,7 +158,6 @@ http://localhost:8000
 - `hero.js`: 히어로 슬라이더 제어
 - `animations.js`: 스크롤 애니메이션
 - `interactions.js`: 사용자 상호작용
-- `index.js`: 메인 초기화 스크립트
 
 ## 📊 성능 최적화
 

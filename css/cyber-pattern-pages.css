@@ -1,0 +1,213 @@
+/*
+ * Sub-page theme extension for cyber intelligence look.
+ * Applied via body.theme-cyber-intel-page.
+ */
+
+.theme-cyber-intel-page {
+    background:
+        radial-gradient(1000px 480px at 0% -10%, rgba(37, 99, 235, 0.12), transparent 60%),
+        radial-gradient(900px 420px at 100% -20%, rgba(14, 165, 233, 0.1), transparent 60%),
+        var(--light-bg);
+}
+
+.theme-cyber-intel-page .page-intel-notice {
+    background: linear-gradient(90deg, #0a1020 0%, #101a34 50%, #0a1020 100%);
+    border-top: 1px solid rgba(96, 165, 250, 0.2);
+    border-bottom: 1px solid rgba(96, 165, 250, 0.2);
+    color: #e2ecff;
+    font-size: clamp(12px, 1.1vw, 13px);
+    letter-spacing: 0.01em;
+}
+
+.theme-cyber-intel-page .page-intel-notice .container {
+    padding: clamp(8px, 1vw, 10px) 0;
+}
+
+.theme-cyber-intel-page .page-intel-notice p {
+    margin: 0;
+}
+
+.theme-cyber-intel-page .page-header {
+    position: relative;
+    background: linear-gradient(130deg, #080d19 0%, #121d37 54%, #1b2f5e 100%);
+    color: #fff;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.theme-cyber-intel-page .page-header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(148, 163, 184, 0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.09) 1px, transparent 1px);
+    background-size: 34px 34px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.theme-cyber-intel-page .page-header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.theme-cyber-intel-page .page-title {
+    font-size: clamp(34px, 5.2vw, 58px);
+    line-height: 1.12;
+    margin-bottom: clamp(14px, 1.9vw, 20px);
+}
+
+.theme-cyber-intel-page .page-subtitle {
+    max-width: 760px;
+    margin: 0 auto clamp(12px, 1.7vw, 18px);
+    font-size: clamp(16px, 2vw, 22px);
+    line-height: 1.5;
+}
+
+.theme-cyber-intel-page .page-title,
+.theme-cyber-intel-page .page-subtitle,
+.theme-cyber-intel-page .breadcrumb,
+.theme-cyber-intel-page .breadcrumb a {
+    color: #f8fafc;
+}
+
+.theme-cyber-intel-page .page-header-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: clamp(12px, 1.7vw, 16px) 0;
+    justify-content: center;
+}
+
+.theme-cyber-intel-page .page-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 34px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: clamp(12px, 1.05vw, 13px);
+    font-weight: 700;
+    color: #dbeafe;
+    background: rgba(30, 58, 138, 0.35);
+    border: 1px solid rgba(125, 211, 252, 0.38);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.theme-cyber-intel-page .page-chip::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22d3ee;
+    box-shadow: 0 0 12px #22d3ee;
+}
+
+.theme-cyber-intel-page .page-header-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: clamp(12px, 1.7vw, 18px);
+    justify-content: center;
+}
+
+.theme-cyber-intel-page .page-header-actions .btn {
+    min-width: 150px;
+    justify-content: center;
+}
+
+.theme-cyber-intel-page .page-header-actions .btn-outline {
+    border-color: rgba(147, 197, 253, 0.45);
+    color: #e2e8f0;
+}
+
+.theme-cyber-intel-page .page-header-actions .btn-outline:hover {
+    border-color: #93c5fd;
+    background: rgba(147, 197, 253, 0.12);
+}
+
+.theme-cyber-intel-page .section-subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-cyber-intel-page .section-subtitle::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #22d3ee;
+    box-shadow: 0 0 12px rgba(34, 211, 238, 0.72);
+}
+
+.theme-cyber-intel-page .visual-card,
+.theme-cyber-intel-page .pillar-card,
+.theme-cyber-intel-page .benefit-item,
+.theme-cyber-intel-page .tech-stack-card,
+.theme-cyber-intel-page .feature-item,
+.theme-cyber-intel-page .usecase-card,
+.theme-cyber-intel-page .overview-feature-card,
+.theme-cyber-intel-page .faq-item,
+.theme-cyber-intel-page .contact-card,
+.theme-cyber-intel-page .ir-card,
+.theme-cyber-intel-page .news-card,
+.theme-cyber-intel-page .privacy-section,
+.theme-cyber-intel-page .policy-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 251, 255, 0.98) 100%);
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.theme-cyber-intel-page .visual-card:hover,
+.theme-cyber-intel-page .pillar-card:hover,
+.theme-cyber-intel-page .benefit-item:hover,
+.theme-cyber-intel-page .tech-stack-card:hover,
+.theme-cyber-intel-page .feature-item:hover,
+.theme-cyber-intel-page .usecase-card:hover,
+.theme-cyber-intel-page .overview-feature-card:hover,
+.theme-cyber-intel-page .news-card:hover {
+    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.14);
+}
+
+.theme-cyber-intel-page .overview-badge,
+.theme-cyber-intel-page .news-badge,
+.theme-cyber-intel-page .service-badge {
+    border: 1px solid rgba(125, 211, 252, 0.45);
+    background: rgba(30, 58, 138, 0.06);
+}
+
+/* Keep DID technology text readable on bright themed cards/backgrounds. */
+.theme-cyber-intel-page .did-technology-section .tech-overview h3,
+.theme-cyber-intel-page .did-technology-section .tech-stack-card h4 {
+    color: #0f172a;
+}
+
+.theme-cyber-intel-page .did-technology-section .tech-overview p,
+.theme-cyber-intel-page .did-technology-section .tech-list li {
+    color: #334155;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .theme-cyber-intel-page .page-intel-notice {
+        font-size: 12px;
+    }
+
+    .theme-cyber-intel-page .page-header-chips,
+    .theme-cyber-intel-page .page-header-actions {
+        justify-content: center;
+    }
+
+    .theme-cyber-intel-page .page-chip {
+        min-height: 32px;
+        padding: 6px 11px;
+    }
+
+    .theme-cyber-intel-page .page-header-actions .btn {
+        min-width: 132px;
+    }
+}

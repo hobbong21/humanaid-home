@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cyber-pattern-pages.css">
 </head>
-<body>
+<body class="theme-cyber-intel-page">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -62,6 +63,12 @@
         </div>
     </nav>
 
+    <div class="page-intel-notice" role="status" aria-live="polite">
+        <div class="container">
+            <p data-ko="문의 업데이트: 일반/투자/협력 문의 응답 프로세스를 개선했습니다." data-en="Contact update: The response process for general, investment, and partnership inquiries has been improved.">문의 업데이트: 일반/투자/협력 문의 응답 프로세스를 개선했습니다.</p>
+        </div>
+    </div>
+
     <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-background"></div>
@@ -69,6 +76,15 @@
             <div class="page-header-content">
                 <h1 class="page-title" data-ko="Contact Us" data-en="Contact Us">Contact Us</h1>
                 <p class="page-subtitle" data-ko="궁금한 사항이 있으시면 언제든지 문의해 주세요" data-en="Please feel free to contact us if you have any questions">궁금한 사항이 있으시면 언제든지 문의해 주세요</p>
+                <div class="page-header-chips" aria-label="문의 핵심 채널">
+                    <span class="page-chip" data-ko="일반 문의" data-en="General Inquiry">일반 문의</span>
+                    <span class="page-chip" data-ko="투자 문의" data-en="Investment Inquiry">투자 문의</span>
+                    <span class="page-chip" data-ko="협력 문의" data-en="Partnership Inquiry">협력 문의</span>
+                </div>
+                <div class="page-header-actions">
+                    <a href="#" class="btn btn-primary" data-ko="문의 작성" data-en="Write Inquiry">문의 작성</a>
+                    <a href="ir.html#contact" class="btn btn-outline" data-ko="IR 연락" data-en="IR Contact">IR 연락</a>
+                </div>
                 <div class="breadcrumb">
                     <a href="index.html">Home</a>
                     <span>/</span>
@@ -87,24 +103,18 @@
             </div>
             <div class="contact-info-grid">
                 <div class="contact-info-card">
-                    <div class="contact-icon">
-                    </div>
                     <h4 data-ko="일반 문의" data-en="General Inquiry">일반 문의</h4>
                     <p data-ko="서비스 및 기술에 관한 문의" data-en="Inquiries about services and technology">서비스 및 기술에 관한 문의</p>
                     <a href="mailto:contact@humanaid.digital" class="contact-link">contact@humanaid.digital</a>
                 </div>
                 
                 <div class="contact-info-card">
-                    <div class="contact-icon">
-                    </div>
                     <h4 data-ko="투자 문의" data-en="Investment Inquiry">투자 문의</h4>
                     <p data-ko="투자 및 IR 관련 문의" data-en="Investment and IR related inquiries">투자 및 IR 관련 문의</p>
                     <a href="mailto:contact@humanaid.digital" class="contact-link">contact@humanaid.digital</a>
                 </div>
                 
                 <div class="contact-info-card">
-                    <div class="contact-icon">
-                    </div>
                     <h4 data-ko="협력 문의" data-en="Partnership Inquiry">협력 문의</h4>
                     <p data-ko="비즈니스 파트너십 문의" data-en="Business partnership inquiries">비즈니스 파트너십 문의</p>
                     <a href="mailto:contact@humanaid.digital" class="contact-link">contact@humanaid.digital</a>
@@ -360,7 +370,7 @@
                 <div class="footer-legal">
                     <a href="privacy-policy.html">개인정보 처리방침</a>
                     <span class="separator">|</span>
-                    <a href="#" data-coming-soon="이용약관 페이지 준비 중입니다.">이용약관</a>
+                    <a href="terms-of-service.html">이용약관</a>
                 </div>
                 <p class="copyright">&copy; 2026 Humanaid. All rights reserved.</p>
                 <div class="footer-social">
@@ -431,9 +441,7 @@
     </script>
     <script src="js/utils.js" type="module"></script>
     <script src="js/navbar.js" type="module"></script>
-    <script src="js/hero.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
     <script src="js/interactions.js" type="module"></script>
-    <script src="js/index.js" type="module"></script>
 </body>
 </html>

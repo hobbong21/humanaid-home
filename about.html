@@ -16,8 +16,9 @@
     <!-- 메인 스타일시트 (이전 style.css와 호환성) -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/cyber-pattern-pages.css">
 </head>
-<body>
+<body class="theme-cyber-intel-page">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -62,6 +63,12 @@
         </div>
     </nav>
 
+    <div class="page-intel-notice" role="status" aria-live="polite">
+        <div class="container">
+            <p data-ko="업데이트: HumanAID 소개 자료가 최신 플랫폼 로드맵 기준으로 갱신되었습니다." data-en="Update: HumanAID overview materials were updated based on the latest platform roadmap.">업데이트: HumanAID 소개 자료가 최신 플랫폼 로드맵 기준으로 갱신되었습니다.</p>
+        </div>
+    </div>
+
     <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-background"></div>
@@ -69,6 +76,15 @@
             <div class="page-header-content">
                 <h1 class="page-title">About HumanAID</h1>
                 <p class="page-subtitle">사람 중심의 AI로 더 건강하고 안전한 디지털 삶을 실현</p>
+                <div class="page-header-chips" aria-label="회사 핵심 지표">
+                    <span class="page-chip" data-ko="핵심 산업 중심" data-en="Core Verticals">핵심 산업 중심</span>
+                    <span class="page-chip" data-ko="플랫폼 구축 완료" data-en="Platform Ready">플랫폼 구축 완료</span>
+                    <span class="page-chip" data-ko="글로벌 확장 준비" data-en="Global Expansion Ready">글로벌 확장 준비</span>
+                </div>
+                <div class="page-header-actions">
+                    <a href="technology.html#overview" class="btn btn-primary" data-ko="핵심 기술 보기" data-en="View Core Tech">핵심 기술 보기</a>
+                    <a href="contact.html" class="btn btn-outline" data-ko="협력 문의" data-en="Partnership">협력 문의</a>
+                </div>
                 <div class="breadcrumb">
                     <a href="index.html">Home</a>
                     <span>/</span>
@@ -101,20 +117,20 @@
                     <div class="company-stats">
                         <div class="stat-box">
                             <div>
-                                <strong>3x Faster</strong>
+                                <strong>Fast Analytics</strong>
                                 <span>분석 속도 향상</span>
                             </div>
                         </div>
                         <div class="stat-box">
                             <div>
-                                <strong>40% Saving</strong>
+                                <strong>Cost Efficiency</strong>
                                 <span>운영 비용 절감</span>
                             </div>
                         </div>
                         <div class="stat-box">
                             <div>
-                                <strong>Zero Silos</strong>
-                                <span>데이터 사일로 제거</span>
+                                <strong>Data Integration</strong>
+                                <span>데이터 연계 강화</span>
                             </div>
                         </div>
                     </div>
@@ -147,8 +163,6 @@
             </div>
             <div class="vision-detail-content">
                 <div class="vision-main-card">
-                    <div class="vision-icon-large">
-                    </div>
                     <h3>"Human + AI + Digital"</h3>
                     <p class="vision-tagline">사람 중심의 AI로 더 건강하고 안전한 디지털 삶을 실현합니다</p>
                 </div>
@@ -158,32 +172,24 @@
                         <div class="pillar-number">01</div>
                         <h4>윤리·신뢰 (Ethics & Trust)</h4>
                         <p>책임 있는 AI 개발을 통해 사용자의 신뢰를 최우선으로 합니다. 설명 가능한 AI와 투명한 의사결정 프로세스를 제공합니다.</p>
-                        <div class="pillar-icon">
-                        </div>
                     </div>
                     
                     <div class="pillar-card">
                         <div class="pillar-number">02</div>
                         <h4>개방·협업 (Openness & Collaboration)</h4>
                         <p>파트너십 중심의 생태계를 구축하여 SI·클라우드·디바이스 기업, 병원·농업 법인과 함께 성장합니다.</p>
-                        <div class="pillar-icon">
-                        </div>
                     </div>
                     
                     <div class="pillar-card">
                         <div class="pillar-number">03</div>
                         <h4>실용·임팩트 (Practicality & Impact)</h4>
                         <p>현장 중심의 실질적 가치 창출을 목표로 합니다. 검증된 ROI와 실증 사례를 통해 고객의 성공을 지원합니다.</p>
-                        <div class="pillar-icon">
-                        </div>
                     </div>
                     
                     <div class="pillar-card">
                         <div class="pillar-number">04</div>
                         <h4>지속가능성 (Sustainability)</h4>
                         <p>장기적 관점의 성장 전략으로 2026-2028 로드맵을 통해 PoC → 파일럿 → 상용화 → 글로벌 확장을 추진합니다.</p>
-                        <div class="pillar-icon">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -235,7 +241,7 @@
                 <div class="footer-legal">
                     <a href="privacy-policy.html">개인정보 처리방침</a>
                     <span class="separator">|</span>
-                    <a href="#" data-coming-soon="이용약관 페이지 준비 중입니다.">이용약관</a>
+                    <a href="terms-of-service.html">이용약관</a>
                 </div>
                 <p class="copyright">&copy; 2026 Humanaid. All rights reserved.</p>
                 <div class="footer-social">
@@ -251,9 +257,7 @@
     <!-- 모듈식 JavaScript 로드 -->
     <script src="js/utils.js" type="module"></script>
     <script src="js/navbar.js" type="module"></script>
-    <script src="js/hero.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
     <script src="js/interactions.js" type="module"></script>
-    <script src="js/index.js" type="module"></script>
 </body>
 </html>

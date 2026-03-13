@@ -16,8 +16,9 @@
     <!-- 메인 스타일시트 (이전 style.css와 호환됨) -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/cyber-pattern-pages.css">
 </head>
-<body>
+<body class="theme-cyber-intel-page">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -62,6 +63,12 @@
         </div>
     </nav>
 
+    <div class="page-intel-notice" role="status" aria-live="polite">
+        <div class="container">
+            <p data-ko="IR 업데이트: 시장 전망, 성장 로드맵, 투자 포인트를 최신 인사이트 기준으로 업데이트했습니다." data-en="IR update: Market outlook, growth roadmap, and investment highlights were refreshed with the latest insights.">IR 업데이트: 시장 전망, 성장 로드맵, 투자 포인트를 최신 인사이트 기준으로 업데이트했습니다.</p>
+        </div>
+    </div>
+
     <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-background"></div>
@@ -69,6 +76,15 @@
             <div class="page-header-content">
                 <h1 class="page-title">Investor Relations</h1>
                 <p class="page-subtitle">HumanAID의 성장 스토리와 투자 기회</p>
+                <div class="page-header-chips" aria-label="투자 핵심 지표">
+                    <span class="page-chip" data-ko="핵심 시장 중심" data-en="Core Markets">핵심 시장 중심</span>
+                    <span class="page-chip" data-ko="시장 확장 전략" data-en="Market Expansion Strategy">시장 확장 전략</span>
+                    <span class="page-chip" data-ko="글로벌 확장 로드맵" data-en="Global Expansion Roadmap">글로벌 확장 로드맵</span>
+                </div>
+                <div class="page-header-actions">
+                    <a href="#contact" class="btn btn-primary" data-ko="IR 문의" data-en="IR Contact">IR 문의</a>
+                    <a href="service.html#service" class="btn btn-outline" data-ko="서비스 실적 보기" data-en="View Service Outcomes">서비스 실적 보기</a>
+                </div>
                 <div class="breadcrumb">
                     <a href="index.html">Home</a>
                     <span>/</span>
@@ -86,27 +102,27 @@
                     <h2>투자 기회</h2>
                     <p>HumanAID는 Make.IT_AI-Assistant 플랫폼을 기반으로 헬스케어, DID, 스마트팜 분야에서 End-to-End AI 솔루션을 제공합니다. 도메인 특화 AI 패키지와 검증된 ROI로 빠르게 성장하고 있습니다.</p>
                     <ul class="overview-highlights">
-                        <li><strong>검증된 성과:</strong> 분석 속도 3배, 운영 비용 40% 절감, 데이터 사일로 제로</li>
-                        <li><strong>3대 시장:</strong> 헬스케어 AI ($4.5B→$62.1B), DID ($7.4B→$58.7B), 스마트팜 ($20.4B→$36.2B)</li>
+                        <li><strong>검증된 성과:</strong> 분석 효율 향상, 운영 최적화, 데이터 연계 강화</li>
+                        <li><strong>핵심 시장:</strong> 헬스케어 AI, DID, 스마트팜 중심의 성장 전략</li>
                         <li><strong>차별화:</strong> 도메인 특화 패키지, End-to-End 플랫폼, 실증된 ROI</li>
                     </ul>
                 </div>
                 <div class="overview-stats">
                     <div class="stat-item">
-                        <div class="stat-number">2026 H1</div>
-                        <div class="stat-label">플랫폼 v1.0 출시</div>
+                        <div class="stat-number">현재</div>
+                        <div class="stat-label">플랫폼 고도화 진행</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">3</div>
-                        <div class="stat-label">핵심 사업 분야</div>
+                        <div class="stat-number">핵심</div>
+                        <div class="stat-label">전략 사업 집중</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">$100B+</div>
-                        <div class="stat-label">총 시장 규모 (2031)</div>
+                        <div class="stat-number">확장</div>
+                        <div class="stat-label">시장 기회 확대</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">2028</div>
-                        <div class="stat-label">글로벌 확장</div>
+                        <div class="stat-number">글로벌</div>
+                        <div class="stat-label">해외 확장 추진</div>
                     </div>
                 </div>
             </div>
@@ -128,7 +144,7 @@
                     </div>
                     <p class="business-desc">의료영상 분석, 임상 의사결정 지원, 운영 최적화</p>
                     <div class="business-revenue">
-                        <strong>시장: $4.5B → $62.1B (2035)</strong>
+                        <strong>시장: 고성장 산업에서 수요 확대</strong>
                     </div>
                 </div>
                 
@@ -138,7 +154,7 @@
                     </div>
                     <p class="business-desc">블록체인 기반 탈중앙화 신원 인증 플랫폼</p>
                     <div class="business-revenue">
-                        <strong>시장: $7.4B → $58.7B (2031, CAGR 88%)</strong>
+                        <strong>시장: 신뢰 기반 인증 수요의 빠른 확산</strong>
                     </div>
                 </div>
                 
@@ -148,7 +164,7 @@
                     </div>
                     <p class="business-desc">생육 최적화, 병해충 예측, 자율 제어</p>
                     <div class="business-revenue">
-                        <strong>시장: $20.4B → $36.2B (2031, CAGR 12.1%)</strong>
+                        <strong>시장: 데이터 기반 농업 전환 가속</strong>
                     </div>
                 </div>
             </div>
@@ -166,31 +182,31 @@
             <div class="milestone-timeline">
                 <div class="milestone completed">
                     <div class="milestone-badge">완료</div>
-                    <h4>2025 Q4</h4>
+                    <h4>기반 구축 단계</h4>
                     <p>핵심 기술 개발 완료<br>도메인 특화 패키지 설계</p>
                 </div>
                 
                 <div class="milestone current">
                     <div class="milestone-badge">진행중</div>
-                    <h4>2026 H1</h4>
-                    <p>Make.IT_AI-Assistant v1.0 출시<br>3대 산업 PoC 완료</p>
+                    <h4>제품 고도화 단계</h4>
+                    <p>Make.IT_AI-Assistant 고도화<br>핵심 산업 PoC 완료</p>
                 </div>
                 
                 <div class="milestone">
                     <div class="milestone-badge">계획</div>
-                    <h4>2026 H2</h4>
+                    <h4>서비스 확장 단계</h4>
                     <p>헬스케어·DID 패키지 베타<br>스마트팜 파일럿 확대</p>
                 </div>
                 
                 <div class="milestone">
                     <div class="milestone-badge">계획</div>
-                    <h4>2027</h4>
+                    <h4>상용화 단계</h4>
                     <p>스마트팜 상용화<br>해외 레퍼런스 확보</p>
                 </div>
                 
                 <div class="milestone">
                     <div class="milestone-badge">계획</div>
-                    <h4>2028+</h4>
+                    <h4>글로벌 도약 단계</h4>
                     <p>아시아 진출 확대<br>글로벌 AI 플랫폼 기업 도약</p>
                 </div>
             </div>
@@ -207,37 +223,37 @@
             
             <div class="advantages-grid">
                 <div class="advantage-box">
-                    <div class="advantage-number">01</div>
+                    <div class="advantage-number">A</div>
                     <h4>End-to-End 플랫폼</h4>
                     <p>데이터 수집부터 MLOps까지 통합 지원</p>
                 </div>
                 
                 <div class="advantage-box">
-                    <div class="advantage-number">02</div>
+                    <div class="advantage-number">B</div>
                     <h4>도메인 특화 패키지</h4>
                     <p>헬스케어, DID, 스마트팜 템플릿 사전 탑재</p>
                 </div>
                 
                 <div class="advantage-box">
-                    <div class="advantage-number">03</div>
+                    <div class="advantage-number">C</div>
                     <h4>검증된 성과</h4>
-                    <p>분석 3배 빠름, 비용 40% 절감, 사일로 제로</p>
+                    <p>분석 효율 향상, 운영 최적화, 데이터 연계 강화</p>
                 </div>
                 
                 <div class="advantage-box">
-                    <div class="advantage-number">04</div>
+                    <div class="advantage-number">D</div>
                     <h4>유연한 배포</h4>
                     <p>클라우드·온프레미스·엣지 지원</p>
                 </div>
                 
                 <div class="advantage-box">
-                    <div class="advantage-number">05</div>
+                    <div class="advantage-number">E</div>
                     <h4>엔터프라이즈 보안</h4>
                     <p>데이터 마스킹, 암호화, 접근제어</p>
                 </div>
                 
                 <div class="advantage-box">
-                    <div class="advantage-number">06</div>
+                    <div class="advantage-number">F</div>
                     <h4>파트너십 생태계</h4>
                     <p>SI·클라우드·병원·농업 법인 협력</p>
                 </div>
@@ -289,7 +305,7 @@
                 <div class="footer-legal">
                     <a href="privacy-policy.html">개인정보 처리방침</a>
                     <span class="separator">|</span>
-                    <a href="#" data-coming-soon="이용약관 페이지 준비 중입니다.">이용약관</a>
+                    <a href="terms-of-service.html">이용약관</a>
                 </div>
                 <p class="copyright">&copy; 2026 Humanaid. All rights reserved.</p>
                 <div class="footer-social">
@@ -305,9 +321,7 @@
     <!-- 모듈형 JavaScript 로드 -->
     <script src="js/utils.js" type="module"></script>
     <script src="js/navbar.js" type="module"></script>
-    <script src="js/hero.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
     <script src="js/interactions.js" type="module"></script>
-    <script src="js/index.js" type="module"></script>
 </body>
 </html>

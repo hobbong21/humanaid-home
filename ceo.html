@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <!-- 메인 스타일시트 (이전 style.css와 호환성) -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cyber-pattern-pages.css">
 </head>
-<body>
+<body class="theme-cyber-intel-page">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -64,6 +65,12 @@
         </div>
     </nav>
 
+    <div class="page-intel-notice" role="status" aria-live="polite">
+        <div class="container">
+            <p data-ko="리더십 업데이트: HumanAID의 중장기 비전 및 실행 계획이 최신 기준으로 반영되었습니다." data-en="Leadership update: HumanAID's mid-to-long term vision and execution plan were updated to the latest baseline.">리더십 업데이트: HumanAID의 중장기 비전 및 실행 계획이 최신 기준으로 반영되었습니다.</p>
+        </div>
+    </div>
+
     <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-background"></div>
@@ -71,6 +78,15 @@
             <div class="page-header-content">
                 <h1 class="page-title" data-ko="CEO 인사말" data-en="CEO Message">CEO 인사말</h1>
                 <p class="page-subtitle" data-ko="AI, 휴먼, 디지털 솔루션의 비전을 제시합니다" data-en="Presenting the vision of AI, Human, and Digital Solutions">AI, 휴먼, 디지털 솔루션의 비전을 제시합니다</p>
+                <div class="page-header-chips" aria-label="리더십 핵심 지표">
+                    <span class="page-chip" data-ko="Human + AI + Digital" data-en="Human + AI + Digital">Human + AI + Digital</span>
+                    <span class="page-chip" data-ko="책임 있는 AI" data-en="Responsible AI">책임 있는 AI</span>
+                    <span class="page-chip" data-ko="파트너십 중심" data-en="Partnership-first">파트너십 중심</span>
+                </div>
+                <div class="page-header-actions">
+                    <a href="about.html#vision" class="btn btn-primary" data-ko="비전 보기" data-en="View Vision">비전 보기</a>
+                    <a href="contact.html" class="btn btn-outline" data-ko="협력 제안" data-en="Propose Partnership">협력 제안</a>
+                </div>
                 <div class="breadcrumb">
                     <a href="index.html">Home</a>
                     <span>/</span>
@@ -203,7 +219,7 @@
                 <div class="footer-legal">
                     <a href="privacy-policy.html">개인정보 처리방침</a>
                     <span class="separator">|</span>
-                    <a href="#" data-coming-soon="이용약관 페이지 준비 중입니다.">이용약관</a>
+                    <a href="terms-of-service.html">이용약관</a>
                 </div>
                 <p class="copyright">&copy; 2026 Humanaid. All rights reserved.</p>
                 <div class="footer-social">
@@ -219,9 +235,7 @@
     <!-- 모듈식 JavaScript 로드 -->
     <script src="js/utils.js" type="module"></script>
     <script src="js/navbar.js" type="module"></script>
-    <script src="js/hero.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
     <script src="js/interactions.js" type="module"></script>
-    <script src="js/index.js" type="module"></script>
 </body>
 </html>

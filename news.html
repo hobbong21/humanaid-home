@@ -18,8 +18,9 @@
     <!-- 메인 스타일시트 (이전 style.css와 호환됨) -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/news-page.css">
+    <link rel="stylesheet" href="css/cyber-pattern-pages.css">
 </head>
-<body>
+<body class="theme-cyber-intel-page">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -64,6 +65,12 @@
         </div>
     </nav>
 
+    <div class="page-intel-notice" role="status" aria-live="polite">
+        <div class="container">
+            <p data-ko="뉴스 업데이트: AI/클라우드/보안 트렌드 기반 최신 기사 큐레이션을 반영했습니다." data-en="News update: Latest curated articles based on AI, cloud, and security trends have been reflected.">뉴스 업데이트: AI/클라우드/보안 트렌드 기반 최신 기사 큐레이션을 반영했습니다.</p>
+        </div>
+    </div>
+
     <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-background"></div>
@@ -71,6 +78,15 @@
             <div class="page-header-content">
                 <h1 class="page-title" data-ko="뉴스" data-en="News">뉴스</h1>
                 <p class="page-subtitle" data-ko="Humanaid의 최신 소식과 언론 보도를 확인하세요" data-en="Check out the latest news and media coverage about Humanaid">Humanaid의 최신 소식과 언론 보도를 확인하세요</p>
+                <div class="page-header-chips" aria-label="뉴스 핵심 태그">
+                    <span class="page-chip" data-ko="AI 트렌드" data-en="AI Trends">AI 트렌드</span>
+                    <span class="page-chip" data-ko="클라우드" data-en="Cloud">클라우드</span>
+                    <span class="page-chip" data-ko="사이버 보안" data-en="Cybersecurity">사이버 보안</span>
+                </div>
+                <div class="page-header-actions">
+                    <a href="#" class="btn btn-primary" data-ko="주요 기사 보기" data-en="View Featured">주요 기사 보기</a>
+                    <a href="contact.html" class="btn btn-outline" data-ko="보도 문의" data-en="Press Contact">보도 문의</a>
+                </div>
                 <div class="breadcrumb">
                     <a href="index.html">Home</a>
                     <span>/</span>
@@ -99,10 +115,10 @@
                             <span class="news-date">2026.02.15</span>
                         </div>
                         <h3 class="news-title">
-                            <a href="#" target="_blank" rel="noopener noreferrer" data-ko='AI 기술 2026년 전망: 엣지 AI와 IoT의 융합' data-en='AI Technology 2026 Outlook: Convergence of Edge AI and IoT'>AI 기술 2026년 전망: 엣지 AI와 IoT의 융합</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" data-ko='AI 기술 전망: 엣지 AI와 IoT의 융합' data-en='AI Technology Outlook: Convergence of Edge AI and IoT'>AI 기술 전망: 엣지 AI와 IoT의 융합</a>
                         </h3>
-                        <p class="news-excerpt" data-ko="2026년 AI 기술은 엣지 컴퓨팅과 IoT의 결합으로 새로운 국면을 맞이하고 있습니다. 특히 스마트 농업과 산업 자동화 분야에서 AI 솔루션의 활용이 급증하고 있으며, 실시간 데이터 처리와 분석을 통해 생산성 향상과 비용 절감을 실현하고 있습니다. 전문가들은 향후 3년간 AI 기반 스마트팜 시장이 연평균 25% 이상 성장할 것으로 전망하고 있습니다." data-en="In 2026, AI technology is entering a new phase with the combination of edge computing and IoT. AI solutions are rapidly expanding in smart agriculture and industrial automation, achieving productivity improvements and cost reductions through real-time data processing and analysis. Experts predict the AI-based smart farm market will grow at an average annual rate of over 25% for the next three years.">
-                            2026년 AI 기술은 엣지 컴퓨팅과 IoT의 결합으로 새로운 국면을 맞이하고 있습니다. 특히 스마트 농업과 산업 자동화 분야에서 AI 솔루션의 활용이 급증하고 있으며, 실시간 데이터 처리와 분석을 통해 생산성 향상과 비용 절감을 실현하고 있습니다. 전문가들은 향후 3년간 AI 기반 스마트팜 시장이 연평균 25% 이상 성장할 것으로 전망하고 있습니다.
+                        <p class="news-excerpt" data-ko="AI 기술은 엣지 컴퓨팅과 IoT의 결합으로 새로운 국면을 맞이하고 있습니다. 특히 스마트 농업과 산업 자동화 분야에서 AI 솔루션의 활용이 확대되고 있으며, 실시간 데이터 처리와 분석을 통해 생산성 향상과 운영 효율 개선을 지원하고 있습니다. 전문가들은 AI 기반 스마트팜 시장의 지속 성장을 전망하고 있습니다." data-en="AI technology is entering a new phase with the combination of edge computing and IoT. AI solutions are expanding in smart agriculture and industrial automation, supporting productivity improvements and operational efficiency through real-time data processing and analysis. Experts forecast sustained growth of the AI-based smart farm market.">
+                            AI 기술은 엣지 컴퓨팅과 IoT의 결합으로 새로운 국면을 맞이하고 있습니다. 특히 스마트 농업과 산업 자동화 분야에서 AI 솔루션의 활용이 확대되고 있으며, 실시간 데이터 처리와 분석을 통해 생산성 향상과 운영 효율 개선을 지원하고 있습니다. 전문가들은 AI 기반 스마트팜 시장의 지속 성장을 전망하고 있습니다.
                         </p>
                         <div class="news-tags">
                             <span class="tag" data-ko="AI기술" data-en="AI Technology">AI기술</span>
@@ -122,10 +138,10 @@
                             <span class="news-date">2026.02.10</span>
                         </div>
                         <h4 class="news-title">
-                            <a href="#" target="_blank" rel="noopener noreferrer">탈중앙화 신원인증(DID) 시장, 2026년 본격 성장 전망</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">탈중앙화 신원인증(DID) 시장, 본격 성장 전망</a>
                         </h4>
                         <p class="news-excerpt">
-                            글로벌 DID 시장이 2026년을 기점으로 본격적인 성장세에 진입할 것으로 예상됩니다. 개인정보 보호에 대한 관심 증가와 함께 블록체인 기반 신원인증 솔루션의 수요가 급증하고 있으며, 금융, 의료, 교육 등 다양한 산업 분야에서 DID 도입이 가속화되고 있습니다.
+                            글로벌 DID 시장이 본격적인 성장세에 진입할 것으로 예상됩니다. 개인정보 보호에 대한 관심 증가와 함께 블록체인 기반 신원인증 솔루션의 수요가 확대되고 있으며, 금융, 의료, 교육 등 다양한 산업 분야에서 DID 도입이 가속화되고 있습니다.
                         </p>
                         <div class="news-tags">
                             <span class="tag">DID</span>
@@ -141,10 +157,10 @@
                             <span class="news-date">2026.02.05</span>
                         </div>
                         <h4 class="news-title">
-                            <a href="#" target="_blank" rel="noopener noreferrer">스마트팜 IoT 기술, 농업 생산성 30% 향상 효과</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">스마트팜 IoT 기술, 농업 생산성 향상 효과</a>
                         </h4>
                         <p class="news-excerpt">
-                            최신 IoT 센서와 AI 분석 기술을 결합한 스마트팜 솔루션이 농업 생산성을 평균 30% 이상 향상시키는 것으로 나타났습니다. 실시간 환경 모니터링과 자동화된 제어 시스템을 통해 최적의 재배 환경을 유지하며, 물과 비료 사용량을 40% 절감하는 효과를 보이고 있습니다.
+                            최신 IoT 센서와 AI 분석 기술을 결합한 스마트팜 솔루션이 농업 생산성 향상에 기여하는 것으로 나타났습니다. 실시간 환경 모니터링과 자동화된 제어 시스템을 통해 최적의 재배 환경을 유지하며, 자원 사용 효율을 높이는 효과를 보이고 있습니다.
                         </p>
                         <div class="news-tags">
                             <span class="tag">스마트팜</span>
@@ -301,7 +317,7 @@
                 <div class="footer-legal">
                     <a href="privacy-policy.html">개인정보 처리방침</a>
                     <span class="separator">|</span>
-                    <a href="#" data-coming-soon="이용약관 페이지 준비 중입니다.">이용약관</a>
+                    <a href="terms-of-service.html">이용약관</a>
                 </div>
                 <p class="copyright">&copy; 2026 Humanaid. All rights reserved.</p>
                 <div class="footer-social">
@@ -341,9 +357,7 @@
     <!-- 모듈형 JavaScript 로드 -->
     <script src="js/utils.js" type="module"></script>
     <script src="js/navbar.js" type="module"></script>
-    <script src="js/hero.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
     <script src="js/interactions.js" type="module"></script>
-    <script src="js/index.js" type="module"></script>
 </body>
 </html>

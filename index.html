@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/home-sections.css">
+    <link rel="stylesheet" href="css/cyber-pattern-home.css">
     <!-- Schema.org 마크업 -->
     <script type="application/ld+json">
     {
@@ -46,7 +47,7 @@
     }
     </script>
 </head>
-<body>
+<body class="theme-cyber-intel">
     <!-- Navigation -->
     <nav class="navbar" role="navigation" aria-label="메인 네비게이션">
         <div class="container">
@@ -91,6 +92,12 @@
         </div>
     </nav>
 
+    <div class="intel-notice" role="status" aria-live="polite">
+        <div class="container">
+            <p data-ko="실시간 업데이트: HumanAID AI 플랫폼의 보안/운영 지표 대시보드를 오픈했습니다." data-en="Live update: HumanAID has opened a security and operations metrics dashboard for its AI platform.">실시간 업데이트: HumanAID AI 플랫폼의 보안/운영 지표 대시보드를 오픈했습니다.</p>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero" role="region" aria-label="히어로 슬라이더">
         <div class="hero-background" aria-hidden="true">
@@ -110,6 +117,10 @@
                                 데이터 기술로 헬스케어, 스마트팜, DID 분야의 혁신을 만듭니다.<br>
                                 HumanAID는 실용적이고 윤리적인 AI 솔루션으로 내일의 기준을 제시합니다.
                             </p>
+                            <div class="hero-intel-actions">
+                                <a href="technology.html#overview" class="btn btn-primary" data-ko="플랫폼 보기" data-en="Explore Platform">플랫폼 보기</a>
+                                <a href="contact.html" class="btn btn-outline" data-ko="문의하기" data-en="Contact">문의하기</a>
+                            </div>
                         </div>
                         <div class="hero-visual">
                             <div class="hero-video-container">
@@ -138,6 +149,10 @@
                             <p class="hero-subtitle" data-ko="데이터 수집부터 서비스 배포까지의 유기적 연결 구조" data-en="Organic connection structure from data collection to service deployment">
                                 데이터 수집부터 서비스 배포까지의 유기적 연결 구조
                             </p>
+                            <div class="hero-intel-actions">
+                                <a href="service.html#service" class="btn btn-primary" data-ko="서비스 확인" data-en="View Services">서비스 확인</a>
+                                <a href="ir.html#contact" class="btn btn-outline" data-ko="IR 문의" data-en="IR Contact">IR 문의</a>
+                            </div>
                         </div>
                         <div class="hero-visual">
                             <div class="platform-screenshot">
@@ -187,11 +202,6 @@
                             <span class="tag">블록체인DID</span>
                             <span class="tag">스마트팜</span>
                         </div>
-                        <div class="news-action">
-                            <a href="news.html" class="btn btn-outline" data-ko='더 많은 뉴스 보기' data-en='View More News'>
-                                더 많은 뉴스 보기
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -207,28 +217,38 @@
                 <span class="section-subtitle">VISION</span>
                 <h2 class="section-title" data-ko="비전" data-en="Vision">비전</h2>
             </div>
-            <div class="vision-content">
-                <div class="vision-main">
+            <div class="vision-layout">
+                <article class="vision-panel vision-panel-main">
                     <h3 data-ko="사람 중심의 AI로 더 건강하고 안전한 디지털 삶을 실현" data-en="Realizing a healthier and safer digital life with human-centered AI">사람 중심의 AI로 더 건강하고 안전한 디지털 삶을 실현</h3>
                     <p class="vision-subtitle" data-ko="Human + AI + Digital을 유기적으로 연결" data-en="Organically connecting Human + AI + Digital">Human + AI + Digital을 유기적으로 연결</p>
-                    <div class="vision-poetry">
-                        <p class="poetry-line" data-ko="윤리·신뢰: 책임 있는 AI 개발" data-en="Ethics & Trust: Responsible AI Development">윤리·신뢰: 책임 있는 AI 개발</p>
-                        <p class="poetry-line" data-ko="개방·협업: 파트너십 중심 생태계" data-en="Openness & Collaboration: Partnership-centered Ecosystem">개방·협업: 파트너십 중심 생태계</p>
-                        <p class="poetry-line" data-ko="실용·임팩트: 현장 중심의 실질적 가치 창출" data-en="Practicality & Impact: Field-centered Value Creation">실용·임팩트: 현장 중심의 실질적 가치 창출</p>
-                        <p class="poetry-line" data-ko="지속가능성: 장기적 관점의 성장 전략" data-en="Sustainability: Long-term Growth Strategy">지속가능성: 장기적 관점의 성장 전략</p>
+                    <p class="vision-brief" data-ko="Make.IT_AI-Assistant를 기반으로 헬스케어, DID, 스마트팜의 문제를 데이터 중심으로 해결합니다." data-en="Based on Make.IT_AI-Assistant, we solve healthcare, DID, and smart farm challenges through data-driven execution.">Make.IT_AI-Assistant를 기반으로 헬스케어, DID, 스마트팜의 문제를 데이터 중심으로 해결합니다.</p>
+                    <div class="vision-pillars-inline" aria-label="비전 원칙">
+                        <span class="vision-pill" data-ko="윤리·신뢰" data-en="Ethics & Trust">윤리·신뢰</span>
+                        <span class="vision-pill" data-ko="개방·협업" data-en="Openness & Collaboration">개방·협업</span>
+                        <span class="vision-pill" data-ko="실용·임팩트" data-en="Practicality & Impact">실용·임팩트</span>
+                        <span class="vision-pill" data-ko="지속가능성" data-en="Sustainability">지속가능성</span>
                     </div>
-                    
-                    <div class="vision-tagline-section">
-                        <div class="vision-tagline-wrapper-rows">
-                            <div class="vision-content-left">
-                                <p class="vision-tagline-main-compact" data-ko="Make.IT_AI-Assistant로 헬스케어, DID, 스마트팜 산업의 문제를 데이터로 해결합니다" data-en="Solving healthcare, DID, and smart farm industry problems with data through Make.IT_AI-Assistant">Make.IT_AI-Assistant로 헬스케어, DID, 스마트팜 산업의 문제를 데이터로 해결합니다</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="vision-features">
-                </div>
+                </article>
+
+                <article class="vision-panel vision-panel-roadmap">
+                    <h4 data-ko="실행 로드맵" data-en="Execution Roadmap">실행 로드맵</h4>
+                    <ul class="vision-roadmap">
+                        <li>
+                            <strong>2026</strong>
+                            <span data-ko="도메인별 PoC 확장과 파일럿 운영" data-en="Expand domain-specific PoCs and run pilots">도메인별 PoC 확장과 파일럿 운영</span>
+                        </li>
+                        <li>
+                            <strong>2027</strong>
+                            <span data-ko="상용 서비스 고도화와 파트너 생태계 확장" data-en="Advance production services and scale the partner ecosystem">상용 서비스 고도화와 파트너 생태계 확장</span>
+                        </li>
+                        <li>
+                            <strong>2028</strong>
+                            <span data-ko="글로벌 시장 확장과 산업별 레퍼런스 확보" data-en="Expand globally and secure vertical references">글로벌 시장 확장과 산업별 레퍼런스 확보</span>
+                        </li>
+                    </ul>
+                </article>
             </div>
+
         </div>
     </section>
 
@@ -273,10 +293,10 @@
                         </p>
                         <div class="service-features-list">
                             <div class="feature-item">
-                                <span data-ko="분석 속도 3배 향상" data-en="3x Faster Analysis">분석 속도 3배 향상</span>
+                                <span data-ko="분석 효율 향상" data-en="Improved Analysis Efficiency">분석 효율 향상</span>
                             </div>
                             <div class="feature-item">
-                                <span data-ko="운영 비용 40% 절감" data-en="40% Cost Saving">운영 비용 40% 절감</span>
+                                <span data-ko="운영 비용 최적화" data-en="Optimized Operating Cost">운영 비용 최적화</span>
                             </div>
                             <div class="feature-item">
                                 <span data-ko="데이터 사일로 제로" data-en="Zero Data Silos">데이터 사일로 제로</span>
@@ -295,13 +315,13 @@
                         </p>
                         <div class="service-features-list">
                             <div class="feature-item">
-                                <span data-ko="생산량 44.6% 증가 목표" data-en="44.6% Production Increase Target">생산량 44.6% 증가 목표</span>
+                                <span data-ko="생산성 향상 목표" data-en="Productivity Improvement Target">생산성 향상 목표</span>
                             </div>
                             <div class="feature-item">
-                                <span data-ko="운영 비용 15-25% 절감 목표" data-en="15-25% Cost Reduction Target">운영 비용 15-25% 절감 목표</span>
+                                <span data-ko="운영 효율 개선 목표" data-en="Operational Efficiency Target">운영 효율 개선 목표</span>
                             </div>
                             <div class="feature-item">
-                                <span data-ko="병해충 예측 정확도 95%↑" data-en="95%+ Pest Prediction Accuracy">병해충 예측 정확도 95%↑</span>
+                                <span data-ko="병해충 예측 고도화" data-en="Advanced Pest Prediction">병해충 예측 고도화</span>
                             </div>
                         </div>
                     </div>
@@ -310,7 +330,6 @@
                 <div class="service-card-new service-card-placeholder">
                     <div class="service-card-content">
                         <div class="service-placeholder-content">
-                            <i class="fas fa-rocket" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
                             <h3 data-ko="더 많은 서비스 준비 중" data-en="More Services Coming">더 많은 서비스 준비 중</h3>
                             <p data-ko="HumanAID는 지속적으로 혁신적인 서비스를 개발하고 있습니다." data-en="HumanAID is continuously developing innovative services.">
                                 HumanAID는 지속적으로 혁신적인 서비스를 개발하고 있습니다.
@@ -351,19 +370,9 @@
                     <p data-ko="IT 미디어 파트너" data-en="IT Media Partner">IT 미디어 파트너</p>
                 </a>
                 
-                <!-- 추후 추가 예정 파트너사 -->
-                <!--
-                <a class="partner-card" href="https://www.etnews.com/" target="_blank" rel="noopener noreferrer" aria-label="전자신문 사이트 방문">
-                    <div class="partner-logo">
-                        <img src="images/etnews-logo.png" alt="전자신문" />
-                    </div>
-                    <h4>전자신문</h4>
-                    <p data-ko="IT 미디어 파트너" data-en="IT Media Partner">IT 미디어 파트너</p>
-                </a>
-                
                 <a class="partner-card" href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer" aria-label="AWS 사이트 방문">
                     <div class="partner-logo">
-                        <img src="images/aws-logo.png" alt="Amazon Web Services" />
+                        <span class="partner-logo-text">AWS</span>
                     </div>
                     <h4>AWS</h4>
                     <p data-ko="클라우드 파트너" data-en="Cloud Partner">클라우드 파트너</p>
@@ -371,12 +380,11 @@
                 
                 <a class="partner-card" href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Cloud 사이트 방문">
                     <div class="partner-logo">
-                        <img src="images/google-logo.png" alt="Google Cloud" />
+                        <span class="partner-logo-text">Google Cloud</span>
                     </div>
                     <h4>Google Cloud</h4>
                     <p data-ko="클라우드 파트너" data-en="Cloud Partner">클라우드 파트너</p>
                 </a>
-                -->
             </div>
         </div>
     </section>
@@ -387,7 +395,6 @@
             <div class="cta-content">
                 <h2 data-ko="지금 시작하세요" data-en="Get Started Now">지금 시작하세요</h2>
                 <p data-ko="AI, 휴먼, 디지털이 결합된 혁신적인 솔루션을 경험하세요" data-en="Experience innovative solutions combining AI, Human, and Digital">AI, 휴먼, 디지털이 결합된 혁신적인 솔루션을 경험하세요</p>
-                <a href="ir.html#contact" class="btn btn-primary btn-large" data-ko="문의하기" data-en="Contact Us">문의하기</a>
             </div>
         </div>
     </section>
@@ -436,7 +443,7 @@
                 <div class="footer-legal">
                     <a href="privacy-policy.html">개인정보 처리방침</a>
                     <span class="separator">|</span>
-                    <a href="#" data-coming-soon="이용약관 페이지 준비 중입니다.">이용약관</a>
+                    <a href="terms-of-service.html">이용약관</a>
                 </div>
                 <p class="copyright">&copy; 2026 Humanaid. All rights reserved.</p>
                 <div class="footer-social">
@@ -455,7 +462,6 @@
     <script src="js/hero.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
     <script src="js/interactions.js" type="module"></script>
-    <script src="js/index.js" type="module"></script>
     
     <!-- YouTube 임베드 에러 처리 -->
     <script>

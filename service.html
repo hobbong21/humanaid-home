@@ -16,8 +16,9 @@
     <!-- 메인 스타일시트 (이전 style.css와 호환성) -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/cyber-pattern-pages.css">
 </head>
-<body>
+<body class="theme-cyber-intel-page">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -62,6 +63,12 @@
         </div>
     </nav>
 
+    <div class="page-intel-notice" role="status" aria-live="polite">
+        <div class="container">
+            <p data-ko="서비스 업데이트: AI 솔루션 및 스마트팜 운영 모델을 실제 적용 사례 중심으로 강화했습니다." data-en="Service update: AI solutions and smart farm operating models were reinforced with real-world use cases.">서비스 업데이트: AI 솔루션 및 스마트팜 운영 모델을 실제 적용 사례 중심으로 강화했습니다.</p>
+        </div>
+    </div>
+
     <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-background"></div>
@@ -69,6 +76,15 @@
             <div class="page-header-content">
                 <h1 class="page-title">Services</h1>
                 <p class="page-subtitle">AI 솔루션과 스마트팜으로 혁신을 만듭니다</p>
+                <div class="page-header-chips" aria-label="서비스 핵심 지표">
+                    <span class="page-chip" data-ko="분석 효율 향상" data-en="Improved Analysis Efficiency">분석 효율 향상</span>
+                    <span class="page-chip" data-ko="운영비용 최적화" data-en="Optimized Operating Cost">운영비용 최적화</span>
+                    <span class="page-chip" data-ko="현장 적용 중심" data-en="Field-first Delivery">현장 적용 중심</span>
+                </div>
+                <div class="page-header-actions">
+                    <a href="#service" class="btn btn-primary" data-ko="AI 솔루션 확인" data-en="AI Solutions">AI 솔루션 확인</a>
+                    <a href="#smartfarm" class="btn btn-outline" data-ko="스마트팜 보기" data-en="Smart Farm">스마트팜 보기</a>
+                </div>
                 <div class="breadcrumb">
                     <a href="index.html">Home</a>
                     <span>/</span>
@@ -99,29 +115,21 @@
                 
                 <div class="overview-features-grid">
                     <div class="overview-feature-card">
-                        <div class="feature-icon-wrapper blue">
-                            </div>
                         <h4>머신러닝 분석</h4>
                         <p>고급 머신러닝 알고리즘으로 데이터를 분석하고 인사이트를 도출합니다.</p>
                     </div>
                     
                     <div class="overview-feature-card">
-                        <div class="feature-icon-wrapper green">
-                            </div>
                         <h4>프로세스 자동화</h4>
                         <p>반복적인 업무를 AI로 자동화하여 운영 효율을 극대화합니다.</p>
                     </div>
                     
                     <div class="overview-feature-card">
-                        <div class="feature-icon-wrapper purple">
-                            </div>
                         <h4>예측 분석</h4>
                         <p>AI 기반 예측 모델로 미래 트렌드를 분석하고 대응합니다.</p>
                     </div>
                     
                     <div class="overview-feature-card">
-                        <div class="feature-icon-wrapper orange">
-                            </div>
                         <h4>맞춤형 솔루션</h4>
                         <p>고객 비즈니스 요구사항에 맞춘 커스터마이징 AI 솔루션을 제공합니다.</p>
                     </div>
@@ -227,29 +235,21 @@
                 
                 <div class="overview-features-grid">
                     <div class="overview-feature-card">
-                        <div class="feature-icon-wrapper blue">
-                            </div>
                         <h4>환경 모니터링</h4>
                         <p>온도, 습도, 조도, CO2 등을 실시간으로 모니터링합니다.</p>
                     </div>
                     
                     <div class="overview-feature-card">
-                        <div class="feature-icon-wrapper green">
-                            </div>
                         <h4>자동 제어</h4>
                         <p>관수, 환기, 냉난방을 자동으로 제어하여 최적 환경을 유지합니다.</p>
                     </div>
                     
                     <div class="overview-feature-card">
-                        <div class="feature-icon-wrapper purple">
-                            </div>
                         <h4>데이터 분석</h4>
                         <p>생육 데이터를 분석하여 수확량 예측과 최적 관리를 지원합니다.</p>
                     </div>
                     
                     <div class="overview-feature-card">
-                        <div class="feature-icon-wrapper orange">
-                            </div>
                         <h4>원격 관리</h4>
                         <p>모바일 앱으로 언제 어디서나 농장을 모니터링하고 제어합니다.</p>
                     </div>
@@ -356,7 +356,7 @@
                         </a>
                     </div>
                     <p class="download-note">
-                        현재 베타 테스트 진행 중입니다. 정식 출시 예정: 2026년 Q2
+                        현재 베타 테스트 진행 중입니다. 정식 출시 일정은 추후 안내됩니다.
                     </p>
                 </div>
             </div>
@@ -421,7 +421,7 @@
                 <div class="footer-legal">
                     <a href="privacy-policy.html">개인정보 처리방침</a>
                     <span class="separator">|</span>
-                    <a href="#" data-coming-soon="이용약관 페이지 준비 중입니다.">이용약관</a>
+                    <a href="terms-of-service.html">이용약관</a>
                 </div>
                 <p class="copyright">&copy; 2026 Humanaid. All rights reserved.</p>
                 <div class="footer-social">
@@ -516,9 +516,7 @@
     <!-- 모듈??JavaScript 로드 -->
     <script src="js/utils.js" type="module"></script>
     <script src="js/navbar.js" type="module"></script>
-    <script src="js/hero.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
     <script src="js/interactions.js" type="module"></script>
-    <script src="js/index.js" type="module"></script>
 </body>
 </html>

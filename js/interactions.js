@@ -106,28 +106,47 @@ class Interactions {
                 'about.html#company': '회사 소개',
                 'about.html#vision': '비전',
                 'ceo.html': 'CEO 메시지',
-                'technology.html#did': 'DID 기술',
-                'technology.html#ai': 'AI 솔루션',
-                'service.html#human-did': 'Human DID',
-                'service.html#makeit': 'Make.IT_AI-Assistant',
+                'technology.html#overview': '핵심 플랫폼 기술',
+                'technology.html#technology': 'DID 기술',
+                'service.html#service': 'AI 솔루션',
                 'service.html#smartfarm': '스마트팜 (Coming Soon)'
             },
             en: {
                 'about.html#company': 'Company Info',
                 'about.html#vision': 'Vision',
                 'ceo.html': 'CEO Message',
-                'technology.html#did': 'DID Technology',
-                'technology.html#ai': 'AI Solution',
-                'service.html#human-did': 'Human DID',
-                'service.html#makeit': 'Make.IT_AI-Assistant',
+                'technology.html#overview': 'Core Platform Technology',
+                'technology.html#technology': 'DID Technology',
+                'service.html#service': 'AI Solution',
                 'service.html#smartfarm': 'Smart Farm (Coming Soon)'
+            }
+        };
+
+        // 과거 앵커 키(레거시)도 함께 지원해 링크 구조 변경 시에도 번역이 깨지지 않도록 함
+        const legacyAliases = {
+            'technology.html#did': 'technology.html#technology',
+            'technology.html#ai': 'technology.html#overview',
+            'service.html#human-did': 'service.html#service',
+            'service.html#makeit': 'service.html#service'
+        };
+
+        const normalizeHref = (href) => {
+            if (!href) return '';
+
+            try {
+                const parsed = new URL(href, window.location.href);
+                const fileName = parsed.pathname.split('/').pop() || '';
+                const normalized = `${fileName}${parsed.hash}`;
+                return legacyAliases[normalized] || normalized;
+            } catch (error) {
+                return legacyAliases[href] || href;
             }
         };
 
         // 드롭다운 메뉴 아이템만 선택 (메인 메뉴 제외)
         const menuItems = document.querySelectorAll('.dropdown-menu a');
         menuItems.forEach(item => {
-            const href = item.getAttribute('href');
+            const href = normalizeHref(item.getAttribute('href'));
             const translation = menuTranslations[lang]?.[href];
             if (translation) {
                 // textContent 대신 innerText 사용하여 더 안정적으로 업데이트

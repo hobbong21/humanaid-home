@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <!-- 메인 스타일시트 (이전 style.css와 호환됨) -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cyber-pattern-pages.css">
 </head>
-<body>
+<body class="theme-cyber-intel-page">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -64,6 +65,12 @@
         </div>
     </nav>
 
+    <div class="page-intel-notice" role="status" aria-live="polite">
+        <div class="container">
+            <p data-ko="정책 업데이트: 개인정보 처리 및 보관 정책이 최신 법령 기준에 맞게 갱신되었습니다." data-en="Policy update: Personal data processing and retention policy has been revised to align with the latest regulations.">정책 업데이트: 개인정보 처리 및 보관 정책이 최신 법령 기준에 맞게 갱신되었습니다.</p>
+        </div>
+    </div>
+
     <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-background"></div>
@@ -71,6 +78,15 @@
             <div class="page-header-content">
                 <h1 class="page-title">개인정보 처리방침</h1>
                 <p class="page-subtitle">Humanaid의 개인정보 보호 및 처리에 관한 정책입니다</p>
+                <div class="page-header-chips" aria-label="정책 핵심 항목">
+                    <span class="page-chip" data-ko="개인정보 보호" data-en="Data Protection">개인정보 보호</span>
+                    <span class="page-chip" data-ko="수집/이용 목적" data-en="Collection Purpose">수집/이용 목적</span>
+                    <span class="page-chip" data-ko="보관/파기 정책" data-en="Retention Policy">보관/파기 정책</span>
+                </div>
+                <div class="page-header-actions">
+                    <a href="contact.html" class="btn btn-primary" data-ko="정책 문의" data-en="Policy Contact">정책 문의</a>
+                    <a href="index.html" class="btn btn-outline" data-ko="홈으로" data-en="Back to Home">홈으로</a>
+                </div>
                 <div class="breadcrumb">
                     <a href="index.html">Home</a>
                     <span>/</span>
@@ -275,7 +291,7 @@
                 <div class="footer-legal">
                     <a href="privacy-policy.html">개인정보 처리방침</a>
                     <span class="separator">|</span>
-                    <a href="#" data-coming-soon="이용약관 페이지 준비 중입니다.">이용약관</a>
+                    <a href="terms-of-service.html">이용약관</a>
                 </div>
                 <p class="copyright">&copy; 2026 Humanaid. All rights reserved.</p>
                 <div class="footer-social">
@@ -291,9 +307,7 @@
     <!-- 모듈형 JavaScript 로드 -->
     <script src="js/utils.js" type="module"></script>
     <script src="js/navbar.js" type="module"></script>
-    <script src="js/hero.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
     <script src="js/interactions.js" type="module"></script>
-    <script src="js/index.js" type="module"></script>
 </body>
 </html>

@@ -16,8 +16,9 @@
     <!-- 메인 스타일시트 (이전 style.css와 호환성) -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/cyber-pattern-pages.css">
 </head>
-<body>
+<body class="theme-cyber-intel-page">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -62,6 +63,12 @@
         </div>
     </nav>
 
+    <div class="page-intel-notice" role="status" aria-live="polite">
+        <div class="container">
+            <p data-ko="기술 업데이트: DID 및 Make.IT_AI-Assistant 기술 문서가 최신 버전으로 반영되었습니다." data-en="Tech update: DID and Make.IT_AI-Assistant technical documentation has been updated to the latest version.">기술 업데이트: DID 및 Make.IT_AI-Assistant 기술 문서가 최신 버전으로 반영되었습니다.</p>
+        </div>
+    </div>
+
     <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-background"></div>
@@ -69,6 +76,15 @@
             <div class="page-header-content">
                 <h1 class="page-title">Humanaid DID</h1>
                 <p class="page-subtitle">탈중앙화 신원 인증으로 디지털 주권을 실현합니다</p>
+                <div class="page-header-chips" aria-label="기술 핵심 지표">
+                    <span class="page-chip" data-ko="W3C DID 표준" data-en="W3C DID Standard">W3C DID 표준</span>
+                    <span class="page-chip" data-ko="엔터프라이즈 보안" data-en="Enterprise Security">엔터프라이즈 보안</span>
+                    <span class="page-chip" data-ko="End-to-End MLOps" data-en="End-to-End MLOps">End-to-End MLOps</span>
+                </div>
+                <div class="page-header-actions">
+                    <a href="#overview" class="btn btn-primary" data-ko="플랫폼 개요" data-en="Platform Overview">플랫폼 개요</a>
+                    <a href="#technology" class="btn btn-outline" data-ko="DID 기술" data-en="DID Technology">DID 기술</a>
+                </div>
                 <div class="breadcrumb">
                     <a href="index.html">Home</a>
                     <span>/</span>
@@ -93,7 +109,7 @@
                     <h3>데이터 수집부터 모델 운영까지<br>전 과정을 지원하는 통합 AI 플랫폼</h3>
                     <p class="overview-description">
                         Make.IT_AI-Assistant는 4단계 프로세스(Data Collection → AI Modeling → MLOps → Application)로 구성된 End-to-End AI 분석 플랫폼입니다.
-                        도메인 특화 패키지, 유연한 배포 환경, 엔터프라이즈 보안을 제공하여 분석 속도 3배 향상, 운영 비용 40% 절감, 데이터 사일로 제로를 실현합니다.
+                        도메인 특화 패키지, 유연한 배포 환경, 엔터프라이즈 보안을 제공하여 분석 효율 향상, 운영 최적화, 데이터 연계 강화를 실현합니다.
                     </p>
                 </div>
                 
@@ -151,7 +167,7 @@
                 <div class="benefit-item">
                     <div class="benefit-number">04</div>
                     <h4>실증된 ROI</h4>
-                    <p>생산량 +44.6%, 비용 -25%, 의료 임원 90% 긍정 평가 등 실제 현장에서 검증된 성과를 제공합니다.</p>
+                    <p>실제 현장에서 검증된 성과를 바탕으로 생산성과 운영 효율 향상에 기여합니다.</p>
                 </div>
             </div>
         </div>
@@ -163,7 +179,7 @@
             <div class="section-header">
                 <span class="section-subtitle">DID TECHNOLOGY</span>
                 <h2 class="section-title">탈중앙화 신원인증 (DID)</h2>
-                <p class="section-description">시장 규모: $7.4B (2026) → $58.7B (2031, CAGR 88%)</p>
+                <p class="section-description">빠르게 성장하는 DID 시장에 대응하는 플랫폼 기술을 제공합니다.</p>
             </div>
             <div class="technology-detail-content">
                 <div class="tech-overview">
@@ -233,8 +249,6 @@
                         <h4>DID 생성</h4>
                         <p>사용자가 앱을 통해 고유한 탈중앙화 식별자(DID)를 생성합니다</p>
                     </div>
-                    <div class="step-icon">
-                    </div>
                 </div>
                 
                 <div class="process-step">
@@ -242,8 +256,6 @@
                     <div class="step-content">
                         <h4>신원 정보 등록</h4>
                         <p>개인 신원 정보를 암호화하여 블록체인에 안전하게 등록합니다</p>
-                    </div>
-                    <div class="step-icon">
                     </div>
                 </div>
                 
@@ -253,8 +265,6 @@
                         <h4>자격증명 발급</h4>
                         <p>신뢰기관으로부터 검증 가능한 자격증명(VC)을 발급받습니다</p>
                     </div>
-                    <div class="step-icon">
-                    </div>
                 </div>
                 
                 <div class="process-step">
@@ -263,8 +273,6 @@
                         <h4>선택적 공유</h4>
                         <p>필요한 정보만 선택하여 서비스 제공자와 안전하게 공유합니다</p>
                     </div>
-                    <div class="step-icon">
-                    </div>
                 </div>
                 
                 <div class="process-step">
@@ -272,8 +280,6 @@
                     <div class="step-content">
                         <h4>신원 검증</h4>
                         <p>블록체인을 통해 신원 정보의 진위 여부를 즉시 검증합니다</p>
-                    </div>
-                    <div class="step-icon">
                     </div>
                 </div>
             </div>
@@ -376,7 +382,7 @@
                 <div class="footer-legal">
                     <a href="privacy-policy.html">개인정보 처리방침</a>
                     <span class="separator">|</span>
-                    <a href="#" data-coming-soon="이용약관 페이지 준비 중입니다.">이용약관</a>
+                    <a href="terms-of-service.html">이용약관</a>
                 </div>
                 <p class="copyright">&copy; 2026 Humanaid. All rights reserved.</p>
                 <div class="footer-social">
@@ -392,9 +398,7 @@
     <!-- 모듈식 JavaScript 로드 -->
     <script src="js/utils.js" type="module"></script>
     <script src="js/navbar.js" type="module"></script>
-    <script src="js/hero.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
     <script src="js/interactions.js" type="module"></script>
-    <script src="js/index.js" type="module"></script>
 </body>
 </html>
