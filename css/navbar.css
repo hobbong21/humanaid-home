@@ -143,6 +143,112 @@
     gap: var(--space-md);
 }
 
+.nav-search {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border-light);
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: var(--radius-full);
+    padding: 6px 8px 6px 12px;
+    transition: var(--transition-base);
+}
+
+.nav-search:focus-within {
+    border-color: rgba(14, 165, 233, 0.45);
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.14);
+}
+
+.nav-search input {
+    width: 160px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--text-dark);
+    font-size: var(--text-sm);
+}
+
+.nav-search input::placeholder {
+    color: #64748b;
+}
+
+.nav-search-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    color: var(--text-white);
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.nav-search-button:hover {
+    transform: translateY(-1px);
+}
+
+.nav-search-results {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 6px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    display: none;
+    z-index: 1004;
+}
+
+.nav-search-results.show {
+    display: block;
+}
+
+.nav-search-result-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 10px;
+    border-radius: var(--radius-sm);
+    font-size: var(--text-sm);
+    color: var(--text-light);
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.nav-search-result-item:hover,
+.nav-search-result-item.active {
+    background: var(--gradient-subtle);
+    color: var(--accent-color);
+}
+
+.nav-search-result-main {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-search-result-main i {
+    width: 14px;
+    text-align: center;
+    color: #64748b;
+}
+
+.nav-search-result-type {
+    font-size: 11px;
+    color: #64748b;
+    background: rgba(148, 163, 184, 0.14);
+    border-radius: 999px;
+    padding: 2px 8px;
+}
+
 .lang-toggle {
     display: flex;
     align-items: center;
@@ -244,6 +350,10 @@
     }
 
     .nav-menu {
+        display: none;
+    }
+
+    .nav-search {
         display: none;
     }
 

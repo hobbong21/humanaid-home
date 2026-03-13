@@ -5,6 +5,11 @@
   force = true
 
 [[redirects]]
+  from = "/api/ai-chat"
+  to = "/.netlify/functions/ai-chat"
+  status = 200
+
+[[redirects]]
   from = "http://www.humanaid.digital/*"
   to = "https://humanaid.digital/:splat"
   status = 301

@@ -82,6 +82,24 @@
                 <li><a href="news.html" role="menuitem">News</a></li>
             </ul>
             <div class="nav-actions">
+                <form class="nav-search" id="navSearchForm" role="search" aria-label="빠른 검색">
+                    <input
+                        id="navSearchInput"
+                        type="search"
+                        placeholder="섹션/메뉴 검색"
+                        data-placeholder-ko="섹션/메뉴 검색"
+                        data-placeholder-en="Search sections/menus"
+                        aria-label="검색어 입력"
+                        autocomplete="off"
+                        aria-autocomplete="list"
+                        aria-controls="navSearchResults"
+                        aria-expanded="false"
+                    >
+                    <ul id="navSearchResults" class="nav-search-results" role="listbox" aria-label="검색 추천"></ul>
+                    <button type="submit" class="nav-search-button" aria-label="검색 실행">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
                 <button class="lang-toggle" id="langToggle" aria-label="언어 전환 버튼" title="한국어/English 전환">
                     <span>EN</span>
                 </button>
@@ -118,7 +136,6 @@
                                 HumanAID는 실용적이고 윤리적인 AI 솔루션으로 내일의 기준을 제시합니다.
                             </p>
                             <div class="hero-intel-actions">
-                                <a href="technology.html#overview" class="btn btn-primary" data-ko="플랫폼 보기" data-en="Explore Platform">플랫폼 보기</a>
                                 <a href="contact.html" class="btn btn-outline" data-ko="문의하기" data-en="Contact">문의하기</a>
                             </div>
                         </div>
@@ -149,10 +166,6 @@
                             <p class="hero-subtitle" data-ko="데이터 수집부터 서비스 배포까지의 유기적 연결 구조" data-en="Organic connection structure from data collection to service deployment">
                                 데이터 수집부터 서비스 배포까지의 유기적 연결 구조
                             </p>
-                            <div class="hero-intel-actions">
-                                <a href="service.html#service" class="btn btn-primary" data-ko="서비스 확인" data-en="View Services">서비스 확인</a>
-                                <a href="ir.html#contact" class="btn btn-outline" data-ko="IR 문의" data-en="IR Contact">IR 문의</a>
-                            </div>
                         </div>
                         <div class="hero-visual">
                             <div class="platform-screenshot">
